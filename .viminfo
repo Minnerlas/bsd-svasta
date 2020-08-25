@@ -18,7 +18,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1598382821,,"wq"
+|2,0,1598382851,,"wq"
 :q
 |2,0,1598381769,,"q"
 :qa
@@ -106,34 +106,46 @@ $
 |3,0,36,0,1,0,1598362069," "
 
 # File marks:
-'0  1  6  ~/.gitignore
-|4,48,1,6,1598382821,"~/.gitignore"
-'1  28  0  ~/mbox
-|4,49,28,0,1598381769,"~/mbox"
-'2  41  0  /etc/ssh/ssh_config
-|4,50,41,0,1598381518,"/etc/ssh/ssh_config"
-'3  1  0  ~/masd
-|4,51,1,0,1598381393,"~/masd"
-'4  11  0  ~/mbox
-|4,52,11,0,1598381386,"~/mbox"
-'5  11  0  ~/mbox
-|4,53,11,0,1598381386,"~/mbox"
-'6  194  0  /etc/daily
-|4,54,194,0,1598380798,"/etc/daily"
-'7  255  0  /etc/rc.d/rc.subr
-|4,55,255,0,1598380715,"/etc/rc.d/rc.subr"
-'8  16  0  /var/mail/nikola
-|4,56,16,0,1598364921,"/var/mail/nikola"
-'9  2  0  ~/.mailrc
-|4,57,2,0,1598364734,"~/.mailrc"
+'0  2  8  ~/.gitignore
+|4,48,2,8,1598382851,"~/.gitignore"
+'1  1  6  ~/.gitignore
+|4,49,1,6,1598382821,"~/.gitignore"
+'2  1  6  ~/.gitignore
+|4,50,1,6,1598382821,"~/.gitignore"
+'3  28  0  ~/mbox
+|4,51,28,0,1598381769,"~/mbox"
+'4  41  0  /etc/ssh/ssh_config
+|4,52,41,0,1598381518,"/etc/ssh/ssh_config"
+'5  1  0  ~/masd
+|4,53,1,0,1598381393,"~/masd"
+'6  11  0  ~/mbox
+|4,54,11,0,1598381386,"~/mbox"
+'7  11  0  ~/mbox
+|4,55,11,0,1598381386,"~/mbox"
+'8  194  0  /etc/daily
+|4,56,194,0,1598380798,"/etc/daily"
+'9  255  0  /etc/rc.d/rc.subr
+|4,57,255,0,1598380715,"/etc/rc.d/rc.subr"
 
 # Jumplist (newest first):
+-'  2  8  ~/.gitignore
+|4,39,2,8,1598382851,"~/.gitignore"
+-'  1  6  ~/.gitignore
+|4,39,1,6,1598382844,"~/.gitignore"
 -'  1  6  ~/.gitignore
 |4,39,1,6,1598382821,"~/.gitignore"
 -'  28  0  ~/mbox
 |4,39,28,0,1598381769,"~/mbox"
 -'  28  0  ~/mbox
 |4,39,28,0,1598381769,"~/mbox"
+-'  28  0  ~/mbox
+|4,39,28,0,1598381769,"~/mbox"
+-'  28  0  ~/mbox
+|4,39,28,0,1598381769,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381768,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381768,"~/mbox"
 -'  1  0  ~/mbox
 |4,39,1,0,1598381768,"~/mbox"
 -'  1  0  ~/mbox
@@ -142,10 +154,22 @@ $
 |4,39,41,0,1598381518,"/etc/ssh/ssh_config"
 -'  41  0  /etc/ssh/ssh_config
 |4,39,41,0,1598381518,"/etc/ssh/ssh_config"
+-'  41  0  /etc/ssh/ssh_config
+|4,39,41,0,1598381518,"/etc/ssh/ssh_config"
+-'  41  0  /etc/ssh/ssh_config
+|4,39,41,0,1598381518,"/etc/ssh/ssh_config"
 -'  1  0  /etc/ssh/ssh_config
 |4,39,1,0,1598381510,"/etc/ssh/ssh_config"
 -'  1  0  /etc/ssh/ssh_config
 |4,39,1,0,1598381510,"/etc/ssh/ssh_config"
+-'  1  0  /etc/ssh/ssh_config
+|4,39,1,0,1598381510,"/etc/ssh/ssh_config"
+-'  1  0  /etc/ssh/ssh_config
+|4,39,1,0,1598381510,"/etc/ssh/ssh_config"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381399,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381399,"~/mbox"
 -'  11  0  ~/mbox
 |4,39,11,0,1598381399,"~/mbox"
 -'  11  0  ~/mbox
@@ -162,6 +186,18 @@ $
 |4,39,1,0,1598381393,"~/masd"
 -'  1  0  ~/masd
 |4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
+-'  1  0  ~/masd
+|4,39,1,0,1598381393,"~/masd"
 -'  11  0  ~/mbox
 |4,39,11,0,1598381386,"~/mbox"
 -'  11  0  ~/mbox
@@ -178,6 +214,38 @@ $
 |4,39,11,0,1598381386,"~/mbox"
 -'  11  0  ~/mbox
 |4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  11  0  ~/mbox
+|4,39,11,0,1598381386,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
+-'  1  0  ~/mbox
+|4,39,1,0,1598381376,"~/mbox"
 -'  1  0  ~/mbox
 |4,39,1,0,1598381376,"~/mbox"
 -'  1  0  ~/mbox
@@ -242,101 +310,34 @@ $
 |4,39,194,0,1598380798,"/etc/daily"
 -'  194  0  /etc/daily
 |4,39,194,0,1598380798,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  1  0  /etc/daily
-|4,39,1,0,1598380763,"/etc/daily"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
--'  255  0  /etc/rc.d/rc.subr
-|4,39,255,0,1598380715,"/etc/rc.d/rc.subr"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
+-'  194  0  /etc/daily
+|4,39,194,0,1598380798,"/etc/daily"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1598382820	0
-	"	1	6
-	^	1	7
-	.	1	6
+	*	1598382850	0
+	"	2	8
+	^	2	9
+	.	2	8
 	+	1	6
+	+	2	8
 
 > ~/mbox
 	*	1598381769	0
