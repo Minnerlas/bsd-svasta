@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      #17817 (Add support for OpenBSD in guest additions)
+     â€“ Oracle VM VirtualBox
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="/search" />
+        <link rel="prev" href="/ticket/17816" title="Ticket #17816" />
+        <link rel="last" href="/ticket/19829" title="Ticket #19829" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/ticket/17817?format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="/ticket/17817?format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="/ticket/17817?format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="next" href="/ticket/17818" title="Ticket #17818" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/ticket.css" type="text/css" />
+        <link rel="first" href="/ticket/2" title="Ticket #2" />
+        <link rel="shortcut icon" href="/graphics/VirtualBox.ico" type="image/x-icon" />
+        <link rel="icon" href="/graphics/VirtualBox.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Oracle VM VirtualBox" />
+    <script type="text/javascript">
+      var auto_preview_timeout=2.0;
+      var form_token="7b46edd41c3fbbde8b355d13";
+    </script>
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/babel.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/folding.js"></script><script type="text/javascript" src="/chrome/common/js/wikitoolbar.js"></script><script type="text/javascript" src="/chrome/common/js/resizer.js"></script><script type="text/javascript" src="/chrome/common/js/auto_preview.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $(".foldable").enableFolding(false, true);
+        var args = {realm: "ticket", id: 17817, escape_newlines: 0}
+        $("#comment").autoPreview("/wiki_render", args, function(textarea, text, rendered) {
+            $("#ticketchange div.comment").html(rendered);
+            if (rendered)
+              $("#ticketchange").show();
+            else if ($("#ticketchange ul.changes").length == 0)
+              $("#ticketchange").hide();
+        });
+        $("#trac-comment-editor textarea").autoPreview("/wiki_render", args,
+                                                       function(textarea, text, rendered) {
+          var comment = $("#trac-comment-editor").next("div.comment");
+          comment.html(rendered);
+          if (rendered)
+            comment.show();
+          else
+            comment.hide();
+        });
+        $("#modify").parent().toggleClass("collapsed");
+        $(".trac-topnav a").click(function() { $("#modify").parent().removeClass("collapsed"); });
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+  <link rel="stylesheet" type="text/css" href="/chrome/site/style.css" />
+</head>
+  <body>
+  <div id="vboxlogo">
+    <a id="innologo-f" href="https://www.virtualbox.org/"><img src="/graphics/vbox_logo2_gradient.png" alt="" /></a>
+  </div>
+  <div id="vboxstring">
+    <img src="/graphics/vboxlogodown.png" alt="VirtualBox" />
+  </div>
+  <div class="innoframe" id="innolinks">
+    <a href="/wiki/VirtualBox">About</a><br />
+    <a href="/wiki/Screenshots">Screenshots</a><br />
+    <a href="/wiki/Downloads">Downloads</a><br />
+    <a href="/wiki/Documentation">Documentation</a><br />
+    Â Â Â Â <a href="/wiki/End-user_documentation">End-user docs</a><br />
+    Â Â Â Â <a href="/wiki/Technical_documentation">Technical docs</a><br />
+    <a href="/wiki/Contributor_information">Contribute</a><br />
+    <a href="/wiki/Community">Community</a><br />
+    </div>
+    <div id="center">
+      <!-- <p style="text-align:right">
+      <a href="/">Home</a> |
+      <a href="/wiki/VirtualBox">About</a>
+      <img style="margin-left:5px; vertical-align:bottom" src="/graphics/vbox40px.png" alt="" /> 
+      </p> -->
+      <form style="text-align: right" action="/search" method="get">
+        <div>
+          <input id="innosearch" type="text" name="q" size="10" value="search..." onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />
+          <input type="hidden" name="wiki" value="on" />
+          <input type="hidden" name="changeset" value="on" />
+          <input type="hidden" name="ticket" value="on" />
+        </div>
+      </form>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="https://www.virtualbox.org/"><img src="/graphics/vbox_logo2_gradient.png" alt="Oracle VM VirtualBox" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first"><a href="/browser">Browse Source</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/ticket/17816" title="Ticket #17816">Previous Ticket</a></span></li><li class="last"><span><a class="next" href="/ticket/17818" title="Ticket #17818">Next Ticket</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1 id="trac-ticket-title">
+          <a href="/ticket/17817">Ticket #17817</a>
+          <span class="status">(new enhancement)</span>
+      </h1>
+      <div id="ticket">
+  <div class="date">
+    <p>Opened <a class="timeline" href="/timeline?from=2018-06-12T19%3A40%3A14Z&amp;precision=second" title="2018-06-12T19:40:14Z in Timeline">2 years</a> ago</p>
+    <p>Last modified <a class="timeline" href="/timeline?from=2018-06-13T23%3A31%3A26Z&amp;precision=second" title="2018-06-13T23:31:26Z in Timeline">2 years</a> ago</p>
+  </div>
+  <h2 class="summary searchable">Add support for OpenBSD in guest additions</h2>
+  <table class="properties">
+    <tr>
+      <th id="h_reporter">Reported by:</th>
+      <td headers="h_reporter" class="searchable">
+        <a href="/query?status=%21closed&amp;reporter=crater">crater</a>
+      </td>
+      <th id="h_owner">Owned by:</th>
+      <td headers="h_owner">
+      </td>
+    </tr>
+    <tr>
+        <th id="h_component">
+          Component:
+        </th>
+        <td headers="h_component">
+              <a href="/query?status=%21closed&amp;component=guest+additions">guest additions</a>
+        </td>
+        <th id="h_version">
+          Version:
+        </th>
+        <td headers="h_version">
+              <a href="/query?status=%21closed&amp;version=VirtualBox+5.2.12">VirtualBox 5.2.12</a>
+        </td>
+    </tr><tr>
+        <th id="h_keywords">
+          Keywords:
+        </th>
+        <td headers="h_keywords" class="searchable">
+              <a href="/query?status=%21closed&amp;keywords=%7Eopenbsd">openbsd</a>
+        </td>
+        <th id="h_cc">
+          Cc:
+        </th>
+        <td headers="h_cc" class="searchable">
+        </td>
+    </tr><tr>
+        <th id="h_guest">
+          Guest type:
+        </th>
+        <td headers="h_guest">
+              <a href="/query?status=%21closed&amp;guest=BSD">BSD</a>
+        </td>
+        <th id="h_host">
+          Host type:
+        </th>
+        <td headers="h_host">
+              <a href="/query?status=%21closed&amp;host=other">other</a>
+        </td>
+    </tr>
+  </table>
+  <div class="description">
+    <h3 id="comment:description">
+      Description
+    </h3>
+    <div class="searchable">
+      <p>
+<a href="https://www.virtualbox.org/manual/ch03.html#guestossupport">https://www.virtualbox.org/manual/ch03.html#guestossupport</a> states no OpenBSD support in guest additions <em>yet</em>. OpenBSD support in <a class="wiki" href="/wiki/VirtualBox">VirtualBox</a> has come a long way over the years and it's an attractive option for development/testing and virtual desktop use. Is guest addition support feasible?
+</p>
+<p>
+Would be great to see support for some pressing usability enhancements, e.g. resizing guest display support, shared folders, shared clipboard, time synchronization. 
+</p>
+
+    </div>
+  </div>
+</div>
+          
+
+        <div>
+          <h2 class="foldable">Change History</h2>
+          <div id="changelog">
+              <div class="change" id="trac-change-1">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:1" class="cnum">
+      <a href="#comment:1">comment:1</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="/timeline?from=2018-06-13T23%3A31%3A26Z&amp;precision=second" title="2018-06-13T23:31:26Z in Timeline">2 years</a> ago by janitor
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>priority</strong>
+        changed from <em>major</em> to <em>minor</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+We accept patches.  You can probably clone NetBSD GA support.
+</p>
+
+    </div>
+
+              </div>
+          </div>
+        </div>
+      <div id="help"><strong>Note:</strong> See
+        <a href="/wiki/TracTickets">TracTickets</a> for help on using
+        tickets.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="/ticket/17817?format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="/ticket/17817?format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="/ticket/17817?format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </div><!-- center -->
+    <div class="innoframe" id="innofoot">
+    <p style="text-align:center">
+      <a href="https://www.oracle.com"><img src="/graphics/logo_oracle_footer.gif" alt="www.oracle.com" /></a><br />
+      <a href="https://www.oracle.com/virtualization/virtualbox/resources.html">Contact</a> â€“ <a href="https://www.oracle.com/html/privacy.html">Privacy policy</a> â€“ <a href="https://www.oracle.com/html/terms.html">Terms of Use</a>
+    </p>
+  </div>
+</body>
+</html>Åý¤—l      _DÎ_DÑBzs_DÏ   (    :https://www.virtualbox.org/ticket/17817 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 18:07:10 GMT
+Server: Oracle-Application-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' 'unsafe-inline'; img-src * data:; frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Cache-Control: must-revalidate
+Content-Length: 11810
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+ original-response-headers Date: Mon, 24 Aug 2020 18:07:10 GMT
+Server: Oracle-Application-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' 'unsafe-inline'; img-src * data:; frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Cache-Control: must-revalidate
+Content-Length: 11810
+Set-Cookie: trac_form_token=7b46edd41c3fbbde8b355d13; Path=/; secure
+Set-Cookie: trac_session=7fe0b8de67115e5a7b9124b0; expires=Sun, 22-Nov-2020 18:07:11 GMT; Path=/; secure
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+ ctid 1 uncompressed-len 0 predictor::resource-count 17 predictor::https://www.virtualbox.org/chrome/common/css/trac.css 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/css/ticket.css 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/jquery.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/babel.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/trac.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/search.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/folding.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/wikitoolbar.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/resizer.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/js/auto_preview.js 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/site/style.css 1,1,1598292430,4097 predictor::https://www.virtualbox.org/graphics/vbox_logo2_gradient.png 1,1,1598292430,4097 predictor::https://www.virtualbox.org/graphics/vboxlogodown.png 1,1,1598292430,4097 net-response-time-onstart 1128 net-response-time-onstop 1447 predictor::https://www.virtualbox.org/graphics/logo_oracle_footer.gif 1,1,1598292430,4097 predictor::https://www.virtualbox.org/chrome/common/css/code.css 1,1,1598292430,4096 predictor::https://www.virtualbox.org/graphics/vbox_gradient.png 1,1,1598292430,4096 predictor::https://www.virtualbox.org/chrome/common/expanded.png 1,1,1598292430,4096   ."

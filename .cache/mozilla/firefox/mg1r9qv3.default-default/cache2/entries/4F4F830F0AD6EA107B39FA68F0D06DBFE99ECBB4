@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://www.furybsd.org/xmlrpc.php" />
+	<title>FuryBSD &#8211; Desktop powered by FreeBSD</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="FuryBSD &raquo; Feed" href="https://www.furybsd.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="FuryBSD &raquo; Comments Feed" href="https://www.furybsd.org/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.furybsd.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.furybsd.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='github-embed-css'  href='https://www.furybsd.org/wp-content/plugins/github-embed/css/github-embed.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='https://www.furybsd.org/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.14' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-slider-slider-css'  href='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/css/slider/slider.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widgets-css'  href='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/features/css/style.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-carousel-basic-css'  href='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/post-carousel/css/style.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vantage-style-css'  href='https://www.furybsd.org/wp-content/themes/vantage/style.css?ver=1.14.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.furybsd.org/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-mobilenav-css'  href='https://www.furybsd.org/wp-content/themes/vantage/inc/mobilenav/css/mobilenav.css?ver=1.14.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.furybsd.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/jquery.cycle.min.js?ver=1.16.0'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/slider/jquery.slider.min.js?ver=1.16.0'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/jquery.touchSwipe.min.js?ver=1.6.6'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/jquery.flexslider.min.js?ver=2.1'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/jquery.touchSwipe.min.js?ver=1.6.6'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/jquery.theme-main.min.js?ver=1.14.4'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/jquery.fitvids.min.js?ver=1.0'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/html5.min.js?ver=3.7.3'></script>
+<![endif]-->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/js/selectivizr.min.js?ver=1.0.3b'></script>
+<![endif]-->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mobileNav = {"search":"","text":{"navigate":"Menu","back":"Back","close":"Close"},"nextIconUrl":"https:\/\/www.furybsd.org\/wp-content\/themes\/vantage\/inc\/mobilenav\/images\/next.png","mobileMenuClose":"<i class=\"fa fa-times\"><\/i>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/themes/vantage/inc/mobilenav/js/mobilenav.min.js?ver=1.14.4'></script>
+<link rel='https://api.w.org/' href='https://www.furybsd.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.furybsd.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.furybsd.org/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="https://www.furybsd.org/" />
+<link rel='shortlink' href='https://www.furybsd.org/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.furybsd.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.furybsd.org%2F" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TS535X9');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-104065644-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>            <style type="text/css">@media (min-width: 780px) {
+  .so-widget-sow-hero-default-896e20a82e28 {
+    min-height: 500px;
+  }
+}
+@media (max-width: 780px) {
+  .so-widget-sow-hero-default-896e20a82e28 {
+    min-height: 300px;
+  }
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+  padding: 50px 20px 50px 20px;
+  max-width: 1280px;
+  height: 500px;
+}
+@media (max-width: 780px) {
+  .so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+    height: 300px;
+  }
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h1,
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2,
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h3,
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4,
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h5,
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h6 {
+  line-height: 1.375em;
+  color: #ffffff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 0.1em 0;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h1 {
+  font-size: 38px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
+  font-size: 32.3px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h3 {
+  font-size: 26.6px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+  font-size: 22.8px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h5 {
+  font-size: 19px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h6 {
+  font-size: 15.2px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper p {
+  color: #f6f6f6;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  margin: 1em 0;
+  font-size: 16px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper .sow-hero-buttons {
+  margin-top: 3em;
+  padding-bottom: 0.2em;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper .sow-hero-buttons .so-widget-sow-button {
+  display: inline-block;
+  margin: 3px 6px 0;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base .sow-slider-pagination li a {
+  background: #ffffff;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base .sow-slide-nav {
+  font-size: 25px;
+}
+.so-widget-sow-hero-default-896e20a82e28 .sow-slider-base .sow-slide-nav a {
+  color: #ffffff;
+}</style>            <style type="text/css">.so-widget-sow-headline-default-80f499377403 .sow-headline-container h1.sow-headline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  line-height: 1.4em;
+  
+  
+  
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container h1.sow-headline a {
+  color: #333333;
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container h3.sow-sub-headline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  line-height: 1.4em;
+  
+  
+  
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container h3.sow-sub-headline a {
+  color: #333333;
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container .decoration {
+  line-height: 0em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container .decoration .decoration-inside {
+  height: 1px;
+  display: inline-block;
+  border-top: 0px none #eeeeee;
+  width: 100%;
+  max-width: 80%;
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container *:first-child {
+  margin-top: 0 !important;
+}
+.so-widget-sow-headline-default-80f499377403 .sow-headline-container *:last-child {
+  margin-bottom: 0 !important;
+}</style>            <style type="text/css">.so-widget-sow-image-default-17bc2272b535 .sow-image-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.so-widget-sow-image-default-17bc2272b535 .sow-image-container > a {
+  display: inline-block;
+  
+  max-width: 100%;
+}
+.so-widget-sow-image-default-17bc2272b535 .sow-image-container .so-widget-image {
+  display: block;
+  max-width: 100%;
+  
+  height: auto;
+}</style>            <style type="text/css">.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container h1.sow-headline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  line-height: 1.4em;
+  
+  
+  
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container h1.sow-headline a {
+  color: #333333;
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container h3.sow-sub-headline {
+  text-align: center;
+  color: #000000;
+  line-height: 1.4em;
+  
+  
+  
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container h3.sow-sub-headline a {
+  color: #000000;
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container .decoration {
+  line-height: 0em;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container .decoration .decoration-inside {
+  height: 1px;
+  display: inline-block;
+  border-top: 0px none #eeeeee;
+  width: 100%;
+  max-width: 80%;
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container *:first-child {
+  margin-top: 0 !important;
+}
+.so-widget-sow-headline-default-3df89e435e1b .sow-headline-container *:last-child {
+  margin-bottom: 0 !important;
+}</style>            <style type="text/css">.so-widget-sow-features-default-8677a81443d1 .sow-features-list {
+  zoom: 1;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list:before {
+  content: '';
+  display: block;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature {
+  position: relative;
+  float: left;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 25px;
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (min-width: 520px) {
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature:nth-of-type(3n + 1) {
+    padding-left: 0;
+    clear: left;
+  }
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature:nth-of-type(3n) {
+    padding-right: 0;
+  }
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-top {
+  flex-direction: column;
+  text-align: center;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-top .sow-icon-container {
+  margin-bottom: 10px;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-right {
+  text-align: left;
+  flex-direction: row;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-right .sow-icon-container {
+  margin-right: 10px;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-left {
+  text-align: left;
+  flex-direction: row-reverse;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-left .sow-icon-container {
+  margin-left: 10px;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-bottom {
+  text-align: center;
+  flex-direction: column-reverse;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-icon-container-position-bottom .sow-icon-container {
+  margin-top: 10px;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature .sow-icon-container {
+  width: 150px;
+  height: 150px;
+  font-size: 150px;
+  text-decoration: none;
+  margin: auto;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature .sow-icon-container [class^="sow-icon-"],
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature .sow-icon-container .sow-icon-image {
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature h5 {
+  margin: 1em 0;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature h5 a {
+  color: inherit;
+  text-decoration: none;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature h5 a:hover {
+  text-decoration: underline;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature p.sow-more-text a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature p.sow-more-text a:hover {
+  text-decoration: underline;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature p:last-child {
+  margin-bottom: 0;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature.sow-features-feature-last-row {
+  margin-bottom: 0;
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-feature .textwidget {
+  margin: auto;
+  
+  
+}
+.so-widget-sow-features-default-8677a81443d1 .sow-features-list .sow-features-clear {
+  clear: both;
+}
+@media (max-width: 520px) {
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list.sow-features-responsive {
+    margin: 0;
+  }
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list.sow-features-responsive .sow-features-feature {
+    width: 100% !important;
+    float: none;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list.sow-features-responsive .sow-features-feature:last-child {
+    margin-bottom: 0px;
+  }
+  .so-widget-sow-features-default-8677a81443d1 .sow-features-list.sow-features-responsive .sow-features-clear {
+    clear: none;
+  }
+}</style>            <style type="text/css">.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item {
+  width: 244.8px;
+}
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a {
+  background-repeat: no-repeat;
+  background-size: 244.8px 163.8px;
+}
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a,
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a span.overlay {
+  width: 244.8px;
+  height: 163.8px;
+}
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a:hover {
+  background-size: 272px 182px;
+}
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-default-thumbnail {
+  width: 244.8px;
+  height: 163.8px;
+}
+.so-widget-sow-post-carousel-default-971e41e9e54d .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-loading {
+  width: 244.8px;
+  height: 163.8px;
+}</style><meta name="viewport" content="width=device-width, initial-scale=1" />		<style type="text/css">
+			.so-mobilenav-mobile + * { display: none; }
+			@media screen and (max-width: 480px) { .so-mobilenav-mobile + * { display: block; } .so-mobilenav-standard + * { display: none; } .site-navigation #search-icon { display: none; } }
+		</style>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<style type="text/css" media="screen">
+		#footer-widgets .widget { width: 100%; }
+		#masthead-widgets .widget { width: 100%; }
+	</style>
+	                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-head">/* Layout 148 */ #pgc-148-0-0 , #pgc-148-1-0 , #pgc-148-2-0 , #pgc-148-3-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-148 #panel-148-0-0-0 , #pl-148 #panel-148-1-0-0 , #pl-148 #panel-148-1-0-2 , #pl-148 #panel-148-2-0-0 , #pl-148 #panel-148-2-0-1 , #pl-148 #panel-148-3-0-0 , #pl-148 #panel-148-3-0-1 {  } #pg-148-0 , #pg-148-1 , #pg-148-2 , #pl-148 .so-panel { margin-bottom:30px } #pl-148 #panel-148-1-0-1 { margin:0px 0px 0px 0px } #pg-148-3 , #pl-148 .so-panel:last-child { margin-bottom:0px } #pg-148-0.panel-no-style, #pg-148-0.panel-has-style > .panel-row-style , #pg-148-1.panel-no-style, #pg-148-1.panel-has-style > .panel-row-style , #pg-148-2.panel-no-style, #pg-148-2.panel-has-style > .panel-row-style , #pg-148-3.panel-no-style, #pg-148-3.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } #pg-148-1> .panel-row-style { background-color:#ffffff;padding:3% 0% 2% 0% } #panel-148-1-0-1> .panel-widget-style { max-width: 600px } #panel-148-1-0-2> .panel-widget-style { border:1px solid #ffffff } #pg-148-2> .panel-row-style { padding:2% 0% 2% 0% } #pg-148-3> .panel-row-style { background-color:#ffffff;padding:5% 0% 6% 0% } @media (max-width:780px){ #pg-148-0.panel-no-style, #pg-148-0.panel-has-style > .panel-row-style , #pg-148-1.panel-no-style, #pg-148-1.panel-has-style > .panel-row-style , #pg-148-2.panel-no-style, #pg-148-2.panel-has-style > .panel-row-style , #pg-148-3.panel-no-style, #pg-148-3.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-148-0 > .panel-grid-cell , #pg-148-0 > .panel-row-style > .panel-grid-cell , #pg-148-1 > .panel-grid-cell , #pg-148-1 > .panel-row-style > .panel-grid-cell , #pg-148-2 > .panel-grid-cell , #pg-148-2 > .panel-row-style > .panel-grid-cell , #pg-148-3 > .panel-grid-cell , #pg-148-3 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pl-148 .panel-grid-cell { padding:0 } #pl-148 .panel-grid .panel-grid-cell-empty { display:none } #pl-148 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><style type="text/css" id="customizer-css">#masthead .hgroup h1, #masthead.masthead-logo-in-menu .logo > h1 { font-size: 21.6px } .main-navigation a { color: #ffffff } .main-navigation ul ul { background-color: #298fba } .main-navigation ul ul a { color: #ffffff } a.button, button, html input[type="button"], input[type="reset"], input[type="submit"], .post-navigation a, #image-navigation a, article.post .more-link, article.page .more-link, .paging-navigation a, .woocommerce #page-wrapper .button, .woocommerce a.button, .woocommerce .checkout-button, .woocommerce input.button, #infinite-handle span button { text-shadow: none } a.button, button, html input[type="button"], input[type="reset"], input[type="submit"], .post-navigation a, #image-navigation a, article.post .more-link, article.page .more-link, .paging-navigation a, .woocommerce #page-wrapper .button, .woocommerce a.button, .woocommerce .checkout-button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, #infinite-handle span { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none } #colophon, body.layout-full { background-color: #298fba } #footer-widgets .widget { color: #ffffff } #colophon .widget_nav_menu .menu-item a { border-color: #ffffff } #footer-widgets .widget a, #footer-widgets .widget a:visited { color: #ffffff } #colophon #theme-attribution, #colophon #site-info { color: #ffffff } #colophon #theme-attribution a, #colophon #site-info a { color: #ffffff } </style><link rel="icon" href="https://www.furybsd.org/wp-content/uploads/2019/10/cropped-logo_size-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.furybsd.org/wp-content/uploads/2019/10/cropped-logo_size-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.furybsd.org/wp-content/uploads/2019/10/cropped-logo_size-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://www.furybsd.org/wp-content/uploads/2019/10/cropped-logo_size-270x270.jpg" />
+		<style type="text/css" id="wp-custom-css">
+			/*Position Text Center Right*/
+
+#herotextwrapper {
+  margin-left: 60%;
+	margin-top: 5%;
+}
+
+/*CSS reset values on mobile devices*/
+@media only screen and (max-width: 580px) {
+  #herotextwrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+	}
+}
+
+/*Hide Breadcrumb and footer on homepage because it looks dumb*/
+#page > div.breadcrumb, .page-id-148 #post-148 > footer {
+  display: none;
+}
+
+/* Fix Margin on Pages */
+.page-id-148 #content, .page-id-148 .site-content, .page-id-148 #pg-148-0 {
+  padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.page-id-148 .site-main, .page-id-148 #post-148 > div {
+  margin: 0px !important;
+}
+
+/* Add Border for Featured Screenshot Image */
+
+#panel-148-1-0-2 > div > div > div {
+	margin-top: 2%;
+}
+#panel-148-1-0-2 > div > div > div > img {
+  border: 2px solid lightgray;
+}
+
+#pg-249-0 {
+  margin-bottom: 0px !important;
+}
+
+#pl-249 #panel-249-1-0-1, #panel-148-1-0-1 > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-id-148 #main {
+	background-color: #e6e6e6;
+  padding: 0px;
+}
+
+.page-id-148 #pg-148-0 > div {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#masthead > nav {
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba), color-stop(1, #41a9d5));
+	color: white;
+}
+
+#colophon {
+padding-top: 0px !important;
+padding-bottom: 23px !important;
+}
+
+.page-id-148 .entry-content h1 {
+    font-size: 2.2em !important;
+}
+
+.page-id-148 .entry-content h5 {
+	font-size: 1.5em;
+}		</style>
+		</head>
+
+<body class="home page-template page-template-templates page-template-template-full-notitle page-template-templatestemplate-full-notitle-php page page-id-148 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home group-blog responsive layout-full no-js page-layout-default not-default-page mobilenav">
+
+
+<div id="page-wrapper">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+	
+		
+<header id="masthead" class="site-header masthead-logo-in-menu " role="banner">
+
+	
+<nav role="navigation" class="site-navigation main-navigation primary use-sticky-menu">
+
+	<div class="full-container">
+					<div class="logo-in-menu-wrapper">
+				<a href="https://www.furybsd.org/" title="FuryBSD" rel="home" class="logo"><img src="https://www.furybsd.org/wp-content/uploads/2019/10/logo_transparent_background.png"  class="logo-height-constrain"  width="1080"  height="1038"  alt="FuryBSD Logo"  /></a>
+							</div>
+				
+					<div id="so-mobilenav-standard-1" data-id="1" class="so-mobilenav-standard"></div><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-148 current_page_item menu-item-298"><a href="https://www.furybsd.org/" aria-current="page">Home</a></li>
+<li id="menu-item-139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-139"><a href="#"><span class="icon"></span>Download NOW!</a>
+<ul class="sub-menu">
+	<li id="menu-item-381" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-381"><a href="https://sourceforge.net/projects/furybsd/files/12.1-2020Q2-XFCE/"><span class="icon"></span>XFCE</a></li>
+	<li id="menu-item-382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-382"><a href="https://sourceforge.net/projects/furybsd/files/12.1-2020Q2-KDE/"><span class="icon"></span>KDE</a></li>
+</ul>
+</li>
+<li id="menu-item-383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-383"><a target="_blank" rel="noopener noreferrer" href="#"><span class="icon"></span>Handbook</a>
+<ul class="sub-menu">
+	<li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-384"><a href="https://github.com/furybsd/furybsd-handbook/wiki/Installing-FuryBSD"><span class="icon"></span>Installation</a></li>
+	<li id="menu-item-401" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-401"><a href="https://github.com/furybsd/furybsd-handbook/wiki/Updating-FuryBSD"><span class="icon"></span>Updating</a></li>
+</ul>
+</li>
+<li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102"><a href="#"><span class="icon"></span>GitHub</a>
+<ul class="sub-menu">
+	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="https://www.furybsd.org/github/">Project Updates</a></li>
+	<li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="https://github.com/furybsd"><span class="icon"></span>GitHub Project</a></li>
+	<li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="https://github.com/furybsd/furybsd-livecd/releases"><span class="icon"></span>Releases</a></li>
+	<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a target="_blank" rel="noopener noreferrer" href="https://github.com/furybsd/furybsd-livecd/issues"><span class="icon"></span>Issues</a></li>
+</ul>
+</li>
+<li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103"><a href="#"><span class="icon"></span>Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="https://t.me/furybsd"><span class="icon"></span>Telegram</a></li>
+	<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://forums.furybsd.org"><span class="icon"></span>Forums</a></li>
+</ul>
+</li>
+<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a href="https://www.furybsd.org/blog/">Blog</a></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://www.furybsd.org/manifesto/">About</a></li>
+</ul></div><div id="so-mobilenav-mobile-1" data-id="1" class="so-mobilenav-mobile"></div><div class="menu-mobilenav-container"><ul id="mobile-nav-item-wrap-1" class="menu"><li><a href="#" class="mobilenav-main-link" data-id="1"><span class="mobile-nav-icon"></span>Menu</a></li></ul></div>			</div>
+</nav><!-- .site-navigation .main-navigation -->
+
+</header><!-- #masthead .site-header -->
+
+	
+	
+	
+	
+	<div id="main" class="site-main">
+		<div class="full-container">
+			
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+				<article id="post-148" class="post-148 page type-page status-publish post">
+
+					<div class="entry-main">
+
+						
+						<div class="entry-content">
+							<div id="pl-148"  class="panel-layout" ><div id="pg-148-0"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-148-0" data-stretch-type="full-stretched" ><div id="pgc-148-0-0"  class="panel-grid-cell" ><div id="panel-148-0-0-0" class="so-panel widget widget_sow-hero panel-first-child panel-last-child" data-index="0" ><div class="so-widget-sow-hero so-widget-sow-hero-default-896e20a82e28 so-widget-fittext-wrapper" data-fit-text-compressor="0.85"><div class="sow-slider-base " style="display: none"><ul class="sow-slider-images" data-settings="{&quot;pagination&quot;:true,&quot;speed&quot;:800,&quot;timeout&quot;:8000,&quot;swipe&quot;:true,&quot;nav_always_show_mobile&quot;:&quot;&quot;,&quot;breakpoint&quot;:&quot;780px&quot;}">		<li class="sow-slider-image  sow-slider-image-cover" style="background-color: #333333" >
+					<div class="sow-slider-image-container">
+			<div class="sow-slider-image-wrapper">
+				<div id="herotextwrapper">
+<h1 style="text-align: center">FuryBSD</h1>
+<h4 style="text-align: center">A Powerful, Portable, FreeBSD Desktop</h4>
+<div class="sow-hero-buttons" style="text-align: center"><div class="so-widget-sow-button so-widget-sow-button-atom-4a75a8acc3b6"><div class="ow-button-base ow-button-align-center">
+	<a href="https://sourceforge.net/projects/furybsd/files/" class="ow-icon-placement-left ow-button-hover" 		>
+		<span>
+			
+			Download		</span>
+	</a>
+</div>
+</div></div>
+</div>
+			</div>
+		</div>
+		<div class="sow-slider-image-overlay sow-slider-image-cover" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/11/Hero.jpg);opacity: 0.7"  ></div>		</li>
+		</ul>				<ol class="sow-slider-pagination">
+											<li><a href="#" data-goto="0" aria-label="display slide 1">1</a></li>
+									</ol>
+
+				<div class="sow-slide-nav sow-slide-nav-next">
+					<a href="#" data-goto="next" aria-label="next slide" data-action="next">
+						<em class="sow-sld-icon-thin-right"></em>
+					</a>
+				</div>
+
+				<div class="sow-slide-nav sow-slide-nav-prev">
+					<a href="#" data-goto="previous" aria-label="previous slide" data-action="prev">
+						<em class="sow-sld-icon-thin-left"></em>
+					</a>
+				</div>
+				</div></div></div></div></div></div><div id="pg-148-1"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-148-1" style="background-color: #ffffff; " data-stretch-type="full" ><div id="pgc-148-1-0"  class="panel-grid-cell" ><div id="panel-148-1-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="1" ><div class="so-widget-sow-headline so-widget-sow-headline-default-80f499377403"><div class="sow-headline-container ">
+	<h1 class='sow-headline'>FuryBSD - Unleash the Fury</h1></div></div></div><div id="panel-148-1-0-1" class="so-panel widget widget_sow-editor" data-index="2" ><div class="panel-widget-style panel-widget-style-for-148-1-0-1" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+	<p style="text-align: center;">FuryBSD is a brand new, open source FreeBSD desktop. FuryBSD pays homage to desktop BSD projects of the past like PC-BSD and TrueOS with its graphical interface and adds additional tools like a live, hybrid USB / DVD image. FuryBSD is completely free to use and distributed under the BSD license.</p>
+</div>
+</div></div></div><div id="panel-148-1-0-2" class="so-panel widget widget_sow-image panel-last-child" data-index="3" ><div class="panel-widget-style panel-widget-style-for-148-1-0-2" ><div class="so-widget-sow-image so-widget-sow-image-default-17bc2272b535">
+
+<div class="sow-image-container">
+	<img src="https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS-768x432.png" width="720" height="405" srcset="https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS-768x432.png 768w, https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS-300x169.png 300w, https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS-1024x576.png 1024w, https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS.png 1920w" sizes="(max-width: 720px) 100vw, 720px" alt="FuryBSD Screenshot" 		class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div id="pg-148-2"  class="panel-grid panel-has-style" ><div class="panel-row-style panel-row-style-for-148-2" ><div id="pgc-148-2-0"  class="panel-grid-cell" ><div id="panel-148-2-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="4" ><div class="so-widget-sow-headline so-widget-sow-headline-default-3df89e435e1b so-widget-fittext-wrapper" data-fit-text-compressor="0"><div class="sow-headline-container ">
+	<h1 class='sow-headline'>Why Choose FuryBSD</h1></div></div></div><div id="panel-148-2-0-1" class="so-panel widget widget_sow-features panel-last-child" data-index="5" ><div class="so-widget-sow-features so-widget-sow-features-default-8677a81443d1">
+<div class="sow-features-list sow-features-responsive">
+
+			
+			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
+
+								<div
+					class="sow-icon-container sow-container-round"
+                    style="color: #83c4a8; "
+					>
+					<span class="sow-icon-fontawesome sow-fas" data-sow-icon="&#xf5ba;" style="font-size: 75px; color: #FFFFFF"></span>				</div>
+				
+				<div class="textwidget">
+											<h5>
+														FreeBSD Desktop													</h5>
+					
+											<p>FuryBSD is entirely based on the legendary stability of FreeBSD. We add a graphical desktop experience out of the box, allowing you to get started more quickly with FreeBSD.</p>
+					
+									</div>
+			</div>
+
+		
+			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
+
+								<div
+					class="sow-icon-container sow-container-round"
+                    style="color: #83c4a8; "
+					>
+					<span class="sow-icon-fontawesome sow-fas" data-sow-icon="&#xf4c4;" style="font-size: 75px; color: #FFFFFF"></span>				</div>
+				
+				<div class="textwidget">
+											<h5>
+														Synchronization													</h5>
+					
+											<p>FuryBSD works to stay in sync with upstream FreeBSD, meaning we use the powerful tools already present in FreeBSD to manage install and upgrades and avoid tunables unless absolutely necessary.</p>
+					
+									</div>
+			</div>
+
+		
+			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
+
+								<div
+					class="sow-icon-container sow-container-round"
+                    style="color: #83c4a8; "
+					>
+					<span class="sow-icon-fontawesome sow-fas" data-sow-icon="&#xf56e;" style="font-size: 75px; color: #FFFFFF"></span>				</div>
+				
+				<div class="textwidget">
+											<h5>
+														Portable													</h5>
+					
+											<p>FuryBSD is compact using a hybrid live DVD / USB image. This lets you use FuryBSD on-the-fly as a portable OS for sensitive work,Â  a way to test your hardware, or to perform a hardware install directly from the live image.</p>
+					
+									</div>
+			</div>
+
+			
+</div>
+</div></div></div></div></div><div id="pg-148-3"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-148-3" style="background-color: #ffffff; " data-stretch-type="full" ><div id="pgc-148-3-0"  class="panel-grid-cell" ><div id="panel-148-3-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="6" ><div class="so-widget-sow-headline so-widget-sow-headline-default-80f499377403"><div class="sow-headline-container ">
+	<h1 class='sow-headline'>Latest Blogs</h1></div></div></div><div id="panel-148-3-0-1" class="so-panel widget widget_sow-post-carousel panel-last-child" data-index="7" ><div class="so-widget-sow-post-carousel so-widget-sow-post-carousel-default-971e41e9e54d">
+	<div class="sow-carousel-title">
+		
+		<a href="#" class="sow-carousel-next" title="Next" aria-label="Next Posts" role="button"></a>
+		<a href="#" class="sow-carousel-previous" title="Previous" aria-label="Previous Posts" role="button"></a>
+
+	</div>
+
+	<div class="sow-carousel-container">
+
+		<a href="#" class="sow-carousel-previous" title="Previous" aria-label="Previous Posts" role="button"></a>
+
+		<a href="#" class="sow-carousel-next" title="Next" aria-label="Next Posts" role="button"></a>
+
+		<div class="sow-carousel-wrapper"
+		     data-post-count="8"
+		     data-loop-posts-enabled="1"
+		     data-ajax-url="https://www.furybsd.org/wp-admin/admin-ajax.php?_widgets_nonce=6c68694427"
+			>
+			<ul class="sow-carousel-items">
+					<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/furybsd-2020-q2-images-are-available-for-xfce-and-kde/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/10/cd-437723_1280-272x182.jpg)" aria-labelledby="sow-carousel-id-436">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/furybsd-2020-q2-images-are-available-for-xfce-and-kde/" id="sow-carousel-id-436">FuryBSD 2020-Q2 images are available for XFCE, and KDE</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/new-furybsd-12-1-based-images-are-available-for-xfce-and-kde/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/10/cd-437723_1280-272x182.jpg)" aria-labelledby="sow-carousel-id-399">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/new-furybsd-12-1-based-images-are-available-for-xfce-and-kde/" id="sow-carousel-id-399">New FuryBSD 12.1 based images are available for XFCE, and KDE</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/kde-plasma-flavor-now-available/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/12/tech_sunset_fury-272x182.png)" aria-labelledby="sow-carousel-id-387">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/kde-plasma-flavor-now-available/" id="sow-carousel-id-387">KDE plasma flavor now available</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/furybsd-12-0-xfce-11-06-2019-01-released/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSD-Logo.jpg)" aria-labelledby="sow-carousel-id-131">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/furybsd-12-0-xfce-11-06-2019-01-released/" id="sow-carousel-id-131">FuryBSD 12.0-XFCE-11-06-2019-01 Released</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/furybsd-video-overview-at-knoxbug/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/11/FuryVideo-272x182.png)" aria-labelledby="sow-carousel-id-116">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/furybsd-video-overview-at-knoxbug/" id="sow-carousel-id-116">FuryBSD Video Overview at KnoxBUG</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/new-preview-image-its-all-the-rage/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/10/cd-437723_1280-272x182.jpg)" aria-labelledby="sow-carousel-id-58">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/new-preview-image-its-all-the-rage/" id="sow-carousel-id-58">New preview image, it&#8217;s all the rage!</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/unleash-the-fury/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/10/FuryBSD-12.0-XFCE-10-24-2019-01.png)" aria-labelledby="sow-carousel-id-46">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/unleash-the-fury/" id="sow-carousel-id-46">Unleash the FURY!</a></h3>
+	</li>
+	<li class="sow-carousel-item">
+		<div class="sow-carousel-thumbnail">
+							<a href="https://www.furybsd.org/new-desktop-os-built-on-freebsd/" style="background-image: url(https://www.furybsd.org/wp-content/uploads/2019/10/logo_size_invert-1.jpg)" aria-labelledby="sow-carousel-id-22">
+					<span class="overlay"></span>
+				</a>
+					</div>
+		<h3><a href="https://www.furybsd.org/new-desktop-os-built-on-freebsd/" id="sow-carousel-id-22">Introducing FuryBSD</a></h3>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<input type="hidden" name="instance_hash" value="75e9450a"/>
+</div></div></div></div></div></div>													</div><!-- .entry-content -->
+
+						
+					</div>
+
+				</article><!-- #post-148 -->
+
+				
+			
+		</div><!-- #content .site-content -->
+	</div><!-- #primary .content-area -->
+
+					</div><!-- .full-container -->
+	</div><!-- #main .site-main -->
+
+	
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div id="footer-widgets" class="full-container">
+					</div><!-- #footer-widgets -->
+	
+	
+	<div id="theme-attribution">A <a href="https://siteorigin.com">SiteOrigin</a> Theme</div>
+</footer><!-- #colophon .site-footer -->
+
+	
+</div><!-- #page-wrapper -->
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS535X9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->            <style type="text/css">.so-widget-sow-button-atom-4a75a8acc3b6 .ow-button-base a {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 1em 2em;
+  background: #41a9d5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba), color-stop(1, #41a9d5));
+  background: -ms-linear-gradient(bottom, #298fba, #41a9d5);
+  background: -moz-linear-gradient(center bottom, #298fba 0%, #41a9d5 100%);
+  background: -o-linear-gradient(#41a9d5, #298fba);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#41a9d5', endColorstr='#298fba', GradientType=0);
+  border: 1px solid;
+  border-color: #2685ad #247fa5 #227598 #247fa5;
+  color: #ffffff !important;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.so-widget-sow-button-atom-4a75a8acc3b6 .ow-button-base a:visited,
+.so-widget-sow-button-atom-4a75a8acc3b6 .ow-button-base a:active,
+.so-widget-sow-button-atom-4a75a8acc3b6 .ow-button-base a:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-button-atom-4a75a8acc3b6 .ow-button-base a.ow-button-hover:hover {
+  background: #49add7;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2b95c2), color-stop(1, #49add7));
+  background: -ms-linear-gradient(bottom, #2b95c2, #49add7);
+  background: -moz-linear-gradient(center bottom, #2b95c2 0%, #49add7 100%);
+  background: -o-linear-gradient(#49add7, #2b95c2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49add7', endColorstr='#2b95c2', GradientType=0);
+  border-color: #288cb6 #2685ad #247ca1 #2685ad;
+  color: #ffffff;
+}</style><a href="#" id="scroll-to-top" class="scroll-to-top" title="Back To Top"><span class="vantage-icon-arrow-up"></span></a><link rel='stylesheet' id='sow-button-base-css'  href='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/sow.jquery.fittext.min.js?ver=1.2'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/post-carousel/js/carousel.min.js?ver=1.16.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var zerospam = {"key":"fhtLzFP@r$@!qU#Iu90A!DP7Vt*l4ufsmTY6itnxOZVGRpND7ve*D)!6GfpKfpYE"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/zero-spam/js/zerospam.js?ver=3.1.1'></script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":"#main"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.furybsd.org/wp-content/plugins/siteorigin-panels/js/styling-21014.min.js?ver=2.10.14'></script>
+<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script>
+</body>
+</html>
+èÐÿtÚ4      _EA_EDB	5é_EB       :https://www.furybsd.org/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Tue, 25 Aug 2020 11:21:14 GMT
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.2.24
+Link: <https://www.furybsd.org/wp-json/>; rel="https://api.w.org/", <https://www.furybsd.org/>; rel=shortlink
+ original-response-headers Server: nginx/1.16.1
+Date: Tue, 25 Aug 2020 11:21:14 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.2.24
+Link: <https://www.furybsd.org/wp-json/>; rel="https://api.w.org/"
+Link: <https://www.furybsd.org/>; rel=shortlink
+ ctid 1 uncompressed-len 0 predictor::resource-count 44 predictor::https://www.furybsd.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/github-embed/css/github-embed.css?ver=5.3.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.14 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/css/slider/slider.css?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/features/css/style.css?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/post-carousel/css/style.css?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/style.css?ver=1.14.4 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/inc/mobilenav/css/mobilenav.css?ver=1.14.4 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/jquery.cycle.min.js?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/slider/jquery.slider.min.js?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/jquery.touchSwipe.min.js?ver=1.6.6 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/js/jquery.flexslider.min.js?ver=2.1 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/js/jquery.touchSwipe.min.js?ver=1.6.6 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/js/jquery.theme-main.min.js?ver=1.14.4 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/js/jquery.fitvids.min.js?ver=1.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/inc/mobilenav/js/mobilenav.min.js?ver=1.14.4 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/uploads/2019/10/logo_transparent_background.png 1,1,1598361665,4097 net-response-time-onstart 1216 net-response-time-onstop 1520 predictor::https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSDSS-768x432.png 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=5.3.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/js/sow.jquery.fittext.min.js?ver=1.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/post-carousel/js/carousel.min.js?ver=1.16.0 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/zero-spam/js/zerospam.js?ver=3.1.1 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-includes/js/wp-embed.min.js?ver=5.3.2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/siteorigin-panels/js/styling-21014.min.js?ver=2.10.14 1,1,1598361665,4096 predictor::https://www.googletagmanager.com/gtm.js?id=GTM-TS535X9 1,1,1598361665,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/uploads/2019/10/cd-437723_1280-272x182.jpg 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/uploads/2019/12/tech_sunset_fury-272x182.png 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/uploads/2019/11/FuryBSD-Logo.jpg 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/uploads/2019/11/FuryVideo-272x182.png 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/uploads/2019/10/FuryBSD-12.0-XFCE-10-24-2019-01.png 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/uploads/2019/10/logo_size_invert-1.jpg 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/features/css/fonts/feature-background.woff 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/widgets/post-carousel/css/fonts/carousel-arrows.woff?-95vnmw 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/themes/vantage/icons/vantage-icons.woff 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/webfonts/fa-solid-900.woff2 1,1,1598361665,4096 predictor::https://www.furybsd.org/wp-content/uploads/2019/11/Hero.jpg 1,1,1598361665,4097 predictor::https://www.furybsd.org/wp-content/plugins/so-widgets-bundle/css/slider/fonts/slider.woff?8p86w5 1,1,1598361665,4096 predictor::https://www.google-analytics.com/analytics.js 1,1,1598361665,4096   ÂL

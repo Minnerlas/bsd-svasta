@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:db="http://docbook.org/ns/docbook">
+  <head>
+    <title>Download FreeBSD</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen,print" href="./layout/css/fixed.css?20130112" type="text/css" />
+    <script type="text/javascript" src="./layout/js/google.js"></script>
+  </head>
+  <body>
+    <div id="containerwrap">
+      <div id="container">
+        <span class="txtoffscreen"><a href="#content" title="Skip site navigation" accesskey="1">Skip site navigation</a> (1)
+  <a href="#contentwrap" title="Skip section navigation" accesskey="2">Skip section navigation</a> (2)
+</span>
+        <div id="headercontainer">
+          <div id="header">
+            <h2 class="blockhide">Header And Logo</h2>
+            <div id="headerlogoleft">
+              <a href="." title="FreeBSD">
+                <img src="./layout/images/logo-red.png" width="457" height="75" alt="FreeBSD" />
+              </a>
+            </div>
+            <div id="headerlogoright">
+              <div class="frontdonateroundbox">
+                <div class="frontdonatetop">
+                  <div>
+                    <b style="display: none;">.</b>
+                  </div>
+                </div>
+                <div class="frontdonatecontent">
+                  <a href="https://www.FreeBSDFoundation.org/donate/">Donate to FreeBSD</a>
+                </div>
+                <div class="frontdonatebot">
+                  <div>
+                    <b style="display: none;">.</b>
+                  </div>
+                </div>
+              </div>
+              <h2 class="blockhide">Peripheral Links</h2>
+              <div id="searchnav">
+                <ul id="searchnavlist"></ul>
+              </div>
+              <div id="search">
+                <form method="get" id="search-form" action="https://duckduckgo.com/" onsubmit="document.getElementById('words').value+=' site: www.FreeBSD.org site: docs.FreeBSD.org site: lists.FreeBSD.org site: wiki.FreeBSD.org site: forums.FreeBSD.org'">
+                  <h2 class="blockhide">
+                    <label for="words">Search</label>
+                  </h2>
+                  <input type="hidden" name="ka" value="v" />
+                  <input type="hidden" name="kt" value="v" />
+                  <input type="hidden" name="kh" value="1" />
+                  <input type="hidden" name="kj" value="r2" />
+                  <input id="words" name="q" type="text" size="20" maxlength="255" onfocus="if( this.value==this.defaultValue ) this.value='';" value="Search" />
+                  <span> </span>
+                  <input id="submit" name="submit" type="submit" value="Search" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <h2 class="blockhide">Site Navigation</h2>
+          <div id="menu">
+            <ul class="first">
+              <li>
+                <a href="./">Home</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./about.html">About</a>
+                <ul>
+                  <li>
+                    <a href="./projects/newbies.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="./features.html">Features</a>
+                  </li>
+                  <li>
+                    <a href="./advocacy/">Advocacy</a>
+                  </li>
+                  <li>
+                    <a href="./marketing/">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="./privacy.html">Privacy Policy</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./where.html">Get FreeBSD</a>
+                <ul>
+                  <li>
+                    <a href="./releases/">Release Information</a>
+                  </li>
+                  <li>
+                    <a href="./releng/">Release Engineering</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./docs.html">Documentation</a>
+                <ul>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/faq/">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/handbook/">Handbook</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/porters-handbook">Porter's Handbook</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/developers-handbook">Developer's Handbook</a>
+                  </li>
+                  <li>
+                    <a href="//www.FreeBSD.org/cgi/man.cgi">Manual Pages</a>
+                  </li>
+                  <li>
+                    <a href="https://papers.FreeBSD.org">Presentations and Papers</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/fdp-primer">Documentation Project Primer</a>
+                  </li>
+                  <li>
+                    <a href="./docs/books.html">All Books and Articles</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./community.html">Community</a>
+                <ul>
+                  <li>
+                    <a href="./community/mailinglists.html">Mailing Lists</a>
+                  </li>
+                  <li>
+                    <a href="https://forums.FreeBSD.org">Forums</a>
+                  </li>
+                  <li>
+                    <a href="./usergroups.html">User Groups</a>
+                  </li>
+                  <li>
+                    <a href="./events/events.html">Events</a>
+                  </li>
+                  <li>
+                    <a href="http://freebsdjournal.com">FreeBSD Journal</a>
+                  </li>
+                  <li>
+                    <a href="http://serverfault.com/questions/tagged/freebsd">Q&amp;A (external)</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./projects/index.html">Developers</a>
+                <ul>
+                  <li>
+                    <a href="https://wiki.FreeBSD.org/IdeasPage">Project Ideas</a>
+                  </li>
+                  <li>
+                    <a href="https://svnweb.FreeBSD.org">Subversion Repository</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/freebsd">Git Mirror</a>
+                  </li>
+                  <li>
+                    <a href="https://reviews.FreeBSD.org">Code Review (Phabricator)</a>
+                  </li>
+                  <li>
+                    <a href="https://wiki.FreeBSD.org">Wiki</a>
+                  </li>
+                  <li>
+                    <a href="https://ci.FreeBSD.org">Continuous Integration Service</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./support.html">Support</a>
+                <ul>
+                  <li>
+                    <a href="./commercial/commercial.html">Vendors</a>
+                  </li>
+                  <li>
+                    <a href="./security/">Security Information</a>
+                  </li>
+                  <li>
+                    <a href="https://bugs.FreeBSD.org/search/">Bug Reports</a>
+                  </li>
+                  <li>
+                    <a href="https://www.FreeBSD.org/support.html">Submitting Bug Reports</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://www.freebsdfoundation.org/">Foundation</a>
+                <ul>
+                  <li>
+                    <a href="https://www.freebsdfoundation.org/donate/">Monetary Donations</a>
+                  </li>
+                  <li>
+                    <a href="./donations/index.html#systems">Hardware Donations</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="content">
+          <div id="sidewrap">
+            <div id="sidenav">
+              <h2 class="blockhide">Section Navigation</h2>
+              <ul>
+                <li>
+                  <a href="./where.html">Get FreeBSD</a>
+                </li>
+                <li>
+                  <a href="./releases/">Release Information</a>
+                  <ul>
+                    <li>Production Release: <br /><a href="./releases/12.1R/announce.html">12.1</a></li>
+                    <li>Production Release: <br /><a href="./releases/11.4R/announce.html">11.4</a></li>
+                    <li>Production Release: <br /><a href="./releases/11.3R/announce.html">11.3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./snapshots/">Snapshot Releases</a>
+                  <ul>
+                    <li>Upcoming Release:<br /><a href="./releases/12.2R/schedule.html">12.2</a></li>
+                    <li>Upcoming Release:<br /><a href="./releases/13.0R/schedule.html">13.0</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./ports/">Ported Applications</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="contentwrap"><h1>Download FreeBSD</h1>
+
+    <a name="choose-version" shape="rect" id="choose-version"></a>
+
+    <a name="choose-arch" shape="rect" id="choose-arch"></a>
+
+    <h2>Choosing an Architecture</h2>
+
+    <p>Most users of FreeBSD will have hardware for either the amd64,
+      i386, or armv6 architectures.</p>
+
+    <p>Modern PCs use the amd64 architecture, including those with
+      Intel® branded processors.  Computers with more than
+      3 GB of memory should use amd64.  If the computer is an
+      older, 32-bit only model, use i386.  For embedded devices and
+      single-board computers (SBC) such as the Raspberry Pi, Beagle
+      Bone Black, Panda Board, and Zed Board, use the armv6 SD card
+      image which supports ARMv6 and ARMv7 processors.</p>
+
+    <p>All other users should reference the
+      <a href="./platforms/index.html" shape="rect">complete list</a>
+      of supported FreeBSD platforms.</p>
+
+    <a name="choose-image" shape="rect" id="choose-image"></a>
+
+    <h2>Choosing an Image</h2>
+
+    <p>The FreeBSD installer can be downloaded in a number of different
+      formats including CD (disc1), DVD (dvd1), and Network Install
+      (bootonly) sized ISO
+      Disc Images, as well as regular and mini USB memory stick
+      images.  Recent versions of FreeBSD are also offered as prebuilt
+      expandable Virtual Machine images, and as SD Card images for embedded
+      platforms.</p>
+
+    <a name="help-statistics" shape="rect" id="help-statistics"></a>
+
+    <h2>FreeBSD Deployment Statistics</h2>
+
+    <p>While FreeBSD does not gather deployment statistics, having
+      statistical information available is essential.  Please consider
+      installing the <a href="https://www.freshports.org/sysutils/bsdstats/" shape="rect">sysutils/bsdstats</a>
+      package, which collects hardware and software statistics,
+      helping developers understand how to best focus their
+      efforts.  The information collected is available at the
+      <a href="http://bsdstats.org" shape="rect">bsdstats.org</a> website.</p>
+
+    <a name="download" shape="rect" id="download"></a>
+
+    <a name="download-rel121" shape="rect" id="download-rel121"></a>
+
+    <h1>FreeBSD 12.1-RELEASE</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/i386/i386/ISO-IMAGES/12.1/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc/ISO-IMAGES/12.1/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc64/ISO-IMAGES/12.1/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpcspe/ISO-IMAGES/12.1/" shape="rect">powerpcspe</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/sparc64/sparc64/ISO-IMAGES/12.1/" shape="rect">sparc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.1/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/README.txt" shape="rect">README</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/12.1-RELEASE/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/12.1-RELEASE/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/12.1-RELEASE/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv6-RPI-B.img.xz" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-BANANAPI.img.xz" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-BEAGLEBONE.img.xz" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-CUBIEBOARD.img.xz" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-CUBIEBOARD2.img.xz" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-CUBOX-HUMMINGBOARD.img.xz" shape="rect">CUBOX-HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-GENERICSD.img.xz" shape="rect">GENERICSD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-RPI2.img.xz" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-PANDABOARD.img.xz" shape="rect">PANDABOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv7/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm-armv7-WANDBOARD.img.xz" shape="rect">WANDBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm64-aarch64-PINE64.img.xz" shape="rect">PINE64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm64-aarch64-PINE64-LTS.img.xz" shape="rect">PINE64-LTS</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-arm64-aarch64-RPI3.img.xz" shape="rect">RPI3</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdocslist">
+	      <li><a href="./releases/index.html#current" shape="rect">Released</a>: November, 2019</li>
+	      <li><a href="./releases/12.1R/relnotes.html" shape="rect">Release Notes</a></li>
+	      <li><a href="./releases/12.1R/readme.html" shape="rect">Readme</a></li>
+	      <li><a href="./releases/12.1R/hardware.html" shape="rect">Hardware Compatibility List</a></li>
+	      <li><a href="./releases/12.1R/installation.html" shape="rect">Installation Instructions</a></li>
+	      <li><a href="./releases/12.1R/errata.html" shape="rect">Errata</a></li>
+	      <li><a href="./releases/12.1R/signatures.html" shape="rect">Signed Checksums</a></li>
+	    </ul>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <br clear="none" />
+
+    <a name="download-rel114" shape="rect" id="download-rel114"></a>
+
+    <h1>FreeBSD 11.4-RELEASE</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/amd64/amd64/ISO-IMAGES/11.4/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/i386/i386/ISO-IMAGES/11.4/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc/ISO-IMAGES/11.4/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc64/ISO-IMAGES/11.4/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/sparc64/sparc64/ISO-IMAGES/11.4/" shape="rect">sparc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/11.4/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/README.txt" shape="rect">README</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.4-RELEASE/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.4-RELEASE/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.4-RELEASE/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-BANANAPI.img.xz" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-BEAGLEBONE.img.xz" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-CUBIEBOARD.img.xz" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-CUBIEBOARD2.img.xz" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-CUBOX-HUMMINGBOARD.img.xz" shape="rect">CUBOX-HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-RPI-B.img.xz" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-RPI2.img.xz" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.4/FreeBSD-11.4-RELEASE-arm-armv6-WANDBOARD.img.xz" shape="rect">WANDBOARD</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdocslist">
+	      <li><a href="./releases/index.html#current" shape="rect">Released</a>: June, 2020</li>
+	      <li><a href="./releases/11.4R/relnotes.html" shape="rect">Release Notes</a></li>
+	      <li><a href="./releases/11.4R/readme.html" shape="rect">Readme</a></li>
+	      <li><a href="./releases/11.4R/hardware.html" shape="rect">Hardware Compatibility List</a></li>
+	      <li><a href="./releases/11.4R/installation.html" shape="rect">Installation Instructions</a></li>
+	      <li><a href="./releases/11.4R/errata.html" shape="rect">Errata</a></li>
+	      <li><a href="./releases/11.4R/signatures.html" shape="rect">Signed Checksums</a></li>
+	    </ul>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <br clear="none" />
+
+    <a name="download-rel113" shape="rect" id="download-rel113"></a>
+
+    <h1>FreeBSD 11.3-RELEASE</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/amd64/amd64/ISO-IMAGES/11.3/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/i386/i386/ISO-IMAGES/11.3/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc/ISO-IMAGES/11.3/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/powerpc/powerpc64/ISO-IMAGES/11.3/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/sparc64/sparc64/ISO-IMAGES/11.3/" shape="rect">sparc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm64/aarch64/ISO-IMAGES/11.3/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/README.txt" shape="rect">README</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.3-RELEASE/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.3-RELEASE/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/VM-IMAGES/11.3-RELEASE/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-BANANAPI.img.xz" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-BEAGLEBONE.img.xz" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-CUBIEBOARD.img.xz" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-CUBIEBOARD2.img.xz" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-CUBOX-HUMMINGBOARD.img.xz" shape="rect">CUBOX-HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-RPI-B.img.xz" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-RPI2.img.xz" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-PANDABOARD.img.xz" shape="rect">PANDABOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/releases/arm/armv6/ISO-IMAGES/11.3/FreeBSD-11.3-RELEASE-arm-armv6-WANDBOARD.img.xz" shape="rect">WANDBOARD</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdocslist">
+	      <li><a href="./releases/index.html#current" shape="rect">Released</a>: July, 2019</li>
+	      <li><a href="./releases/11.3R/relnotes.html" shape="rect">Release Notes</a></li>
+	      <li><a href="./releases/11.3R/readme.html" shape="rect">Readme</a></li>
+	      <li><a href="./releases/11.3R/hardware.html" shape="rect">Hardware Compatibility List</a></li>
+	      <li><a href="./releases/11.3R/installation.html" shape="rect">Installation Instructions</a></li>
+	      <li><a href="./releases/11.3R/errata.html" shape="rect">Errata</a></li>
+	      <li><a href="./releases/11.3R/signatures.html" shape="rect">Signed Checksums</a></li>
+	    </ul>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <br clear="none" />
+
+    
+    
+
+    <a name="download-snapshots" shape="rect" id="download-snapshots"></a>
+
+    <h1>Development Snapshots</h1>
+
+    <p>If you are interested in a purely experimental
+      <strong>snapshot</strong> release of FreeBSD-CURRENT (AKA
+      13.0-CURRENT), aimed at developers and bleeding-edge
+      testers only, then please see the <a href="./snapshots/" shape="rect">FreeBSD Snapshot Releases</a> page.  For
+      more information about past, present and future releases in
+      general, please visit the <a href="./releases/index.html" shape="rect">release information
+	page</a>.</p>
+
+    <h1>FreeBSD 13.0-CURRENT</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/amd64/amd64/ISO-IMAGES/13.0/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/i386/i386/ISO-IMAGES/13.0/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc/ISO-IMAGES/13.0/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc64/ISO-IMAGES/13.0/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpcspe/ISO-IMAGES/13.0/" shape="rect">powerpcspe</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/13.0/" shape="rect">armv6</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">armv7</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/13.0/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/13.0-CURRENT/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/13.0-CURRENT/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/13.0-CURRENT/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">CUBOX/HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">GENERICSD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">PANDABOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/13.0/" shape="rect">PINE64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/13.0/" shape="rect">PINE64-LTS</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/13.0/" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/13.0/" shape="rect">RPI3</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/13.0/" shape="rect">WANDBOARD</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	     
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+
+    <p> </p>
+
+    <h1>FreeBSD 12.1-STABLE</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/amd64/amd64/ISO-IMAGES/12.1/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/i386/i386/ISO-IMAGES/12.1/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc/ISO-IMAGES/12.1/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc64/ISO-IMAGES/12.1/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpcspe/ISO-IMAGES/12.1/" shape="rect">powerpcspe</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/sparc64/sparc64/ISO-IMAGES/12.1/" shape="rect">sparc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/12.1/" shape="rect">armv6</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">armv7</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/12.1/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/12.1-STABLE/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/12.1-STABLE/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/12.1-STABLE/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">CUBOX/HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">GENERICSD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">PANDABOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/12.1/" shape="rect">PINE64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/12.1/" shape="rect">PINE64-LTS</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/12.1/" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/12.1/" shape="rect">RPI3</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv7/ISO-IMAGES/12.1/" shape="rect">WANDBOARD</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdocslist">
+	      
+	      <li> </li>
+	    </ul>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+
+    <p> </p>
+
+    <h1>FreeBSD 11.4-STABLE</h1>
+
+    <table class="tblbasic tblwide tbldownload">
+      <tbody>
+	<tr>
+	  <th rowspan="1" colspan="1">Installer Images</th>
+	  <th rowspan="1" colspan="1">Virtual Machine Images</th>
+	  <th rowspan="1" colspan="1">SD Card Images</th>
+	  <th rowspan="1" colspan="1">Documentation</th>
+	</tr>
+	<tr>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/amd64/amd64/ISO-IMAGES/11.4/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/i386/i386/ISO-IMAGES/11.4/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc/ISO-IMAGES/11.4/" shape="rect">powerpc</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/powerpc/powerpc64/ISO-IMAGES/11.4/" shape="rect">powerpc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/sparc64/sparc64/ISO-IMAGES/11.4/" shape="rect">sparc64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">armv6</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm64/aarch64/ISO-IMAGES/11.4/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/11.4-STABLE/amd64/Latest/" shape="rect">amd64</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/11.4-STABLE/i386/Latest/" shape="rect">i386</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/VM-IMAGES/11.4-STABLE/aarch64/Latest/" shape="rect">aarch64</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdownloadlist">
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">BANANAPI</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">BEAGLEBONE</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">CUBIEBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">CUBIEBOARD2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">CUBOX/HUMMINGBOARD</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">RPI2</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">RPI-B</a></li>
+	      <li><a href="https://download.FreeBSD.org/ftp/snapshots/arm/armv6/ISO-IMAGES/11.4/" shape="rect">WANDBOARD</a></li>
+	    </ul>
+	  </td>
+	  <td rowspan="1" colspan="1">
+	    <ul class="txtdocslist">
+	      
+	      <li> </li>
+	    </ul>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+
+    <p>If you plan on getting FreeBSD via HTTP or FTP, please check
+      the listing of <a href="./doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html" shape="rect"><strong>mirror
+	  sites</strong></a> in the Handbook to see if there is a site
+      closer to you.</p>
+
+    <a name="install" shape="rect" id="install"></a>
+
+    <h2>Install FreeBSD</h2>
+
+    <p>There are many options for installing FreeBSD, including
+      installation from CD-ROM, DVD, USB Memory Stick or even directly
+      using anonymous FTP, HTTP, or NFS.  Please read through the <a href="./doc/en_US.ISO8859-1/books/handbook/bsdinstall.html" shape="rect">FreeBSD
+      installation guide</a> before downloading the entire FreeBSD
+      distribution.</p>
+
+    <a name="distribution" shape="rect" id="distribution"></a>
+
+    <h2>Purchase FreeBSD Media</h2>
+
+    <p>FreeBSD can be acquired on CD-ROM or DVD from <a href="http://www.freebsdmall.com/" shape="rect">FreeBSD Mall</a>, or
+      one of the other <a href="./doc/en_US.ISO8859-1/books/handbook/mirrors.html" shape="rect">CD-ROM
+	and DVD Publishers</a>.</p>
+
+    <a name="past" shape="rect" id="past"></a>
+
+    <h2>Past Releases</h2>
+
+    <p>For downloading past releases, please visit the <a href="http://ftp-archive.FreeBSD.org/pub/FreeBSD-Archive/old-releases/" shape="rect">FTP
+	archive</a>.</p>
+
+    <a name="derived" shape="rect" id="derived"></a>
+
+    <h2>FreeBSD-derived Operating System Distributions</h2>
+
+    <p>FreeBSD is widely used as a building block for other commercial
+      and open-source operating systems.  The projects below are
+      widely used and of particular interest to FreeBSD users.</p>
+
+    <ul class="txtdownloadlist">
+      <li><p><a href="https://www.freenas.org" shape="rect">FreeNAS</a> is an open
+	source storage platform based on FreeBSD and supports sharing
+	across Windows, Apple, and UNIX-like systems.</p></li>
+
+      <li><p><a href="https://www.furybsd.org" shape="rect">FuryBSD</a> is a brand
+	new, open source FreeBSD desktop.  FuryBSD pays homage to desktop
+	BSD projects of the past PC-BSD and TrueOS with its graphical
+	interface and adds additional tools like a live, hybrid
+	USB/DVD image.  FuryBSD is completely free to use and
+	distributed under the BSD license.</p></li>
+
+      <li><p><a href="https://ghostbsd.org" shape="rect">GhostBSD</a> is derived
+	from FreeBSD, GhostBSD uses the GTK environment to provide a
+	beautiful looks and comfortable experience on the modern BSD
+	platform offering a natural and native UNIX® work
+	environment.</p></li>
+
+      <li><p><a href="https://www.midnightbsd.org" shape="rect">MidnightBSD</a> is
+	a BSD-derived operating system developed with desktop users in
+	mind.  It includes all the software you'd expect for your
+	daily tasks: mail, web browsing, word processing, gaming,
+	and much more.</p></li>
+
+      <li><p><a href="http://www.pfsense.org" shape="rect">pfSense</a> is a
+	FreeBSD based customized distribution tailored for
+	use as a firewall and router.</p></li>
+    </ul>
+
+    <a name="apps" shape="rect" id="apps"></a>
+
+    <h2>Applications and Utility Software</h2>
+
+    <h3>The Ports Collection</h3>
+
+    <p>The FreeBSD Ports Collection is a diverse collection of utility
+      and application software that has been ported to FreeBSD.</p>
+
+    <p>See <a href="./doc/en_US.ISO8859-1/books/handbook/ports.html" shape="rect">
+      <strong>Installing Applications: Packages and Ports</strong></a>
+      in the Handbook.</p>
+
+    <ul class="txtdownloadlist">
+      <li><a href="ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/" shape="rect">Download the FreeBSD
+	  Ports Collection framework</a></li>
+
+      <li><a href="./ports/index.html" shape="rect">Web interface to the Ports
+	  Collection</a></li>
+
+      <li><a href="http://www.freshports.org/" shape="rect">FreshPorts - a more
+	  advanced web interface to the Ports Collection</a></li>
+    </ul>
+
+    <p>For information about how <em>you</em> can contribute
+      <em>your</em> favorite piece of software to the Ports Collection,
+      have a look at <em><a href="./doc/en_US.ISO8859-1/books/porters-handbook/index.html" shape="rect">The
+	  Porter's Handbook</a></em> and the article <em><a href="./doc/en_US.ISO8859-1/articles/contributing/index.html" shape="rect">Contributing
+	  to FreeBSD</a></em>.</p>
+
+  </div>
+          <br class="clearboth" />
+        </div>
+        <div id="footer"><span><a href="./search/index-site.html">Site Map</a> |
+  <a href="./copyright/">Legal Notices</a> | © 1995&#8211;2020 The FreeBSD Project.
+  All rights reserved.</span><br />
+      Last modified:  2020-06-18</div>
+      </div>
+    </div>
+  </body>
+</html>
+ÝÿÇXr¢      _E(_E(B	5Ø_E(   #    :https://www.freebsd.org/where.html necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 25 Aug 2020 11:20:48 GMT
+Content-Type: text/html
+Content-Length: 41022
+Last-Modified: Tue, 25 Aug 2020 11:15:18 GMT
+ETag: "5f44f2c6-a03e"
+Server: ToTheCloud/v0.01
+X-Varnish: 736506601 735014832
+Age: 62
+Via: 1.1 wfe0.nyi.FreeBSD.org
+X-Cache: HIT
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/; style-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ 'unsafe-inline'; script-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ https://ssl.google-analytics.com/ga.js 'unsafe-inline' resource: data: blob:; img-src 'self' https://www.freebsd.org/ https://docs.freebsd.org https://ssl.google-analytics.com/ https://chart.googleapis.com/ data: blob:; upgrade-insecure-requests
+ original-response-headers Date: Tue, 25 Aug 2020 11:20:48 GMT
+Content-Type: text/html
+Content-Length: 41022
+Connection: keep-alive
+Last-Modified: Tue, 25 Aug 2020 11:15:18 GMT
+ETag: "5f44f2c6-a03e"
+Server: ToTheCloud/v0.01
+X-Varnish: 736506601 735014832
+Age: 62
+Via: 1.1 wfe0.nyi.FreeBSD.org
+X-Cache: HIT
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/; style-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ 'unsafe-inline'; script-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ https://ssl.google-analytics.com/ga.js 'unsafe-inline' resource: data: blob:; img-src 'self' https://www.freebsd.org/ https://docs.freebsd.org https://ssl.google-analytics.com/ https://chart.googleapis.com/ data: blob:; upgrade-insecure-requests
+ ctid 1 uncompressed-len 0 predictor::resource-count 9 predictor::https://www.freebsd.org/layout/css/fixed.css?20130112 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/js/google.js 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/global.css 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/layout.css?20150916 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/text.css 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/navigation.css 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/table.css 1,1,1598361640,4096 predictor::https://www.freebsd.org/layout/css/iefixes.css 1,1,1598361640,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1598361640,4096 net-response-time-onstart 125 net-response-time-onstop 245    >

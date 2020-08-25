@@ -1,0 +1,139 @@
+From deraadt@do-not-reply.openbsd.org Tue May 19 06:07:00 MST 2020
+Return-Path: root
+Date: May 19 06:07:00 MST 2020
+From: deraadt@do-not-reply.openbsd.org (Theo de Raadt)
+To: Nikola <nikola>
+Subject: Welcome to OpenBSD 6.7!
+Status: RO
+
+This message attempts to describe the most basic initial questions that a
+system administrator of an OpenBSD box might have.  You are urged to save
+this message for later reference.
+
+For more information on how to set up your OpenBSD system, refer to the
+"afterboot" man page (i.e. after you exit the mail subsystem, type
+"man afterboot").  If you are not familiar with how to read man pages, type
+"man man" at a shell prompt and read the entire thing.  Pay specific
+attention to the "man -k keyword" option, which will permit you to find the
+man page you are looking for more easily; for instance, "man -k ethernet".
+The GNU "info" subsystem is also installed with further documentation
+resources: to read info pages type "info".  (The info subsystem behaves like
+the popular emacs editor.)
+
+Again, PLEASE READ THE MANUAL PAGES.  Our developers have spent countless
+hours improving them so that they are clear and precise.
+
+If you have installed the X11 file sets during the install process, you can
+find further information regarding configuration in the file /usr/X11R6/README.
+
+Several popular binary packages (pre-compiled applications) are
+available from mirror sites.  Mirror selection is usually automatic
+during install/upgrade -- a mirror URL from https://www.openbsd.org/ftp.html
+is stored into the file /etc/installurl.  Installation of packages is
+as simple as:
+
+ # pkg_add -v rsync chromium emacs-26.3-no_x11
+
+Significant efforts were made to centralize all system configuration in the
+/etc directory.  You should be able to find each of the configuration files
+you seek there, lightly documented.  In particular, much of the configuration
+has been centralized in the file /etc/rc.conf.  You should not need to ever
+edit the file /etc/rc.   The files /etc/rc.securelevel and /etc/rc.local exist
+for this purpose; the first is run before the system has gone into secure
+mode; the second is run afterwards (if in doubt, add your tools to rc.local).
+
+Please refer to our web pages for any other questions you might have.
+	https://www.OpenBSD.org
+Please pay special attention to the Frequently Asked Questions section at
+	https://www.OpenBSD.org/faq/
+
+OpenBSD is free software.  You can do with it as you like, subject to very few
+conditions (described at www.OpenBSD.org/policy.html).  But free software isn't
+written without money.  Network links, hardware costs, release engineering and
+testing work all take money and significant effort on the part of those who
+have made this OpenBSD release what it is.  Please reward the developers who
+have made OpenBSD what it is, and thus make it possible for this wonderful
+process to continue.  For more information on how you can help, please see
+www.OpenBSD.org/goals.html and visit www.OpenBSD.org/donations.html to see a
+list of those who have donated money, equipment, or other resources to ensure
+OpenBSD continues.
+
+If you wish to ensure that OpenBSD runs better on your machines, please do us
+a favor (after you have your mail system configured!) and type something like:
+ # (dmesg; sysctl hw.sensors) | \
+	mail -s "Sony VAIO 505R laptop, suspend works OK" dmesg@openbsd.org
+so that we can see what kinds of configurations people are running.  As shown,
+including a bit of information about your machine in the subject or the body
+can help us even further.  We will use this information to improve device driver
+support in future releases.  (Please do this using the supplied GENERIC kernel,
+not for a custom compiled kernel, unless you're unable to boot the GENERIC
+kernel.  If you have a multi-processor machine, dmesg results of both GENERIC.MP
+and GENERIC kernels are appreciated.)  The device driver information we get from
+this helps us fix existing drivers. Thank you!
+
+(If you wish to save it, use the "x" command.)
+
+From root@openbsd-vmbox.my.domain Mon Aug 24 17:44:23 2020
+Return-Path: <root@openbsd-vmbox.my.domain>
+Delivered-To: root@openbsd-vmbox.my.domain
+Received: from localhost (openbsd-vmbox.my.domain [local])
+	by openbsd-vmbox.my.domain (OpenSMTPD) with ESMTPA id 9e50b262
+	for <root@openbsd-vmbox.my.domain>;
+	Mon, 24 Aug 2020 17:44:23 +0200 (CEST)
+From: Charlie Root <root@openbsd-vmbox.my.domain>
+Date: Mon, 24 Aug 2020 17:44:23 +0200 (CEST)
+To: root@openbsd-vmbox.my.domain
+Subject: openbsd-vmbox.my.domain install response file
+Message-ID: <0c22d4153765b8d6@openbsd-vmbox.my.domain>
+Status: RO
+
+System hostname = openbsd-vmbox
+Which network interface do you wish to configure = em0
+IPv4 address for em0 = dhcp
+IPv6 address for em0 = none
+Which network interface do you wish to configure = done
+DNS domain name = my.domain
+Start sshd(8) by default = yes
+Do you expect to run the X Window System = yes
+Do you want the X Window System to be started by xenodm(1) = yes
+Setup a user = yes
+No really, what is the lower-case loginname, or 'no' = nikola
+Full name for user nikola = Nikola
+Allow root ssh login = no
+What timezone are you in = Europe/Belgrade
+Which disk is the root disk = wd0
+Use (W)hole disk MBR, whole disk (G)PT, (O)penBSD area or (E)dit = w
+Use (A)uto layout, (E)dit auto layout, or create (C)ustom layout = a
+Location of sets = cd0
+Pathname to the sets = 6.7/amd64
+Set name(s) = done
+Directory does not contain SHA256.sig. Continue without verification = yes
+Location of sets = done
+Time appears wrong.  Set to 'Mon Aug 24 17:43:11 CEST 2020' = yes
+
+From root@openbsd-vmbox.my.domain Mon Aug 24 17:44:23 2020
+Return-Path: <root@openbsd-vmbox.my.domain>
+Delivered-To: root@openbsd-vmbox.my.domain
+Received: from localhost (openbsd-vmbox.my.domain [local])
+	by openbsd-vmbox.my.domain (OpenSMTPD) with ESMTPA id 5c74d97d
+	for <root@openbsd-vmbox.my.domain>;
+	Mon, 24 Aug 2020 17:44:23 +0200 (CEST)
+From: Charlie Root <root@openbsd-vmbox.my.domain>
+Date: Mon, 24 Aug 2020 17:44:23 +0200 (CEST)
+To: root@openbsd-vmbox.my.domain
+Subject: openbsd-vmbox.my.domain rc.firsttime output
+Message-ID: <0c22d416d19d9316@openbsd-vmbox.my.domain>
+Status: RO
+
+Path to firmware: http://firmware.openbsd.org/firmware/6.7/
+No devices found which need firmware files to be downloaded.
+Checking for available binary patches...
+Run syspatch(8) to install:
+001_wscons		002_rpki		003_ssh
+004_libssl		005_unbound		006_smtpd_sockaddr
+007_perl		008_hid			009_asr
+010_x509		011_shmget		012_tty
+013_tty			014_iked		015_rpki
+016_ximcp		017_dix			018_ximcp
+019_libssl		020_libssl
+

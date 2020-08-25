@@ -1,0 +1,649 @@
+body { background: #fff; color: #000; margin: 10px; padding: 0; }
+body, th, td {
+ font: normal 13px Verdana,Arial,'Bitstream Vera Sans',Helvetica,sans-serif;
+}
+h1, h2, h3, h4 {
+ font-family: Arial,Verdana,'Bitstream Vera Sans',Helvetica,sans-serif;
+ font-weight: bold;
+ letter-spacing: -0.018em;
+ page-break-after: avoid;
+}
+h1 { font-size: 19px; margin: .15em 1em 0.5em 0 }
+h2 { font-size: 16px }
+h3 { font-size: 14px }
+hr { border: none;  border-top: 1px solid #ccb; margin: 2em 0 }
+address { font-style: normal }
+img { border: none }
+
+.underline { text-decoration: underline }
+ol.loweralpha { list-style-type: lower-alpha }
+ol.upperalpha { list-style-type: upper-alpha }
+ol.lowerroman { list-style-type: lower-roman }
+ol.upperroman { list-style-type: upper-roman }
+ol.arabic     { list-style-type: decimal }
+
+/* Link styles */
+:link, :visited {
+ text-decoration: none;
+ color: #b00;
+ border-bottom: 1px dotted #bbb;
+}
+:link:hover, :visited:hover { background-color: #eee; color: #555 }
+h1 :link, h1 :visited ,h2 :link, h2 :visited, h3 :link, h3 :visited,
+h4 :link, h4 :visited, h5 :link, h5 :visited, h6 :link, h6 :visited {
+ color: inherit;
+}
+.trac-rawlink { border-bottom: none }
+
+/* Heading anchors */
+.anchor:link, .anchor:visited {
+ border: none;
+ color: #d7d7d7;
+ font-size: .8em;
+ vertical-align: text-top;
+}
+* > .anchor:link, * > .anchor:visited {
+ visibility: hidden;
+}
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor,
+h4:hover .anchor, h5:hover .anchor, h6:hover .anchor,
+span:hover .anchor {
+ visibility: visible;
+}
+
+@media screen {
+ a.ext-link .icon {
+  background: url(../extlink.gif) center center no-repeat;
+  padding-left: 12px;
+ }
+ a.mail-link .icon {
+  background: url(../envelope.png) center center no-repeat;
+  padding-left: 14px;
+ }
+}
+
+/* Forms */
+input, textarea, select { margin: 2px }
+input, select { vertical-align: middle }
+input[type=button], input[type=submit], input[type=reset] {
+ background: #eee;
+ color: #222;
+ border: 1px outset #ccc;
+ padding: .1em .5em;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+ background: #ccb;
+}
+input[type=button][disabled], input[type=submit][disabled],
+input[type=reset][disabled] {
+ background: #f6f6f6;
+ border-style: solid;
+ color: #999;
+}
+input[type=text], input.textwidget, textarea { border: 1px solid #d7d7d7 }
+input[type=text], input.textwidget { padding: .25em .5em }
+input[type=text]:focus, input.textwidget:focus, textarea:focus {
+ border: 1px solid #886;
+}
+option { border-bottom: 1px dotted #d7d7d7 }
+fieldset { border: 1px solid #d7d7d7; padding: .5em; margin: 1em 0 }
+p.hint, span.hint { color: #666; font-size: 85%; font-style: italic; margin: .5em 0;
+  padding-left: 1em;
+}
+fieldset.iefix {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+* html fieldset.iefix { width: 98% }
+fieldset.iefix p { margin: 0 }
+legend { color: #999; padding: 0 .25em; font-size: 90%; font-weight: bold }
+label.disabled { color: #d7d7d7 }
+.buttons { margin: .5em .5em .5em 0 }
+.buttons form, .buttons form div { display: inline }
+.buttons input { margin: 1em .5em .1em 0 }
+.inlinebuttons input { 
+ font-size: 70%;
+ border-width: 1px;
+ border-style: dotted;
+ margin: 0 .1em;
+ padding: 0.1em;
+ background: none;
+}
+
+/* Header */
+#header hr { display: none }
+#header h1 { margin: 1.5em 0 -1.5em; padding: 0 }
+#header img { border: none; margin: 0 0 -3em }
+#header :link, #header :visited, #header :link:hover, #header :visited:hover {
+ background: transparent;
+ color: #555;
+ margin-bottom: 2px;
+ border: none;
+ padding: 0;
+}
+#header h1 :link:hover, #header h1 :visited:hover { color: #000 }
+
+/* Quick search */
+#search {
+ clear: both;
+ font-size: 10px;
+ height: 2.2em;
+ margin: 0 0 1em;
+ text-align: right;
+}
+#search input { font-size: 10px }
+#search label { display: none }
+
+/* Navigation */
+.nav h2, .nav hr { display: none }
+.nav ul { 
+ font-size: 10px;
+ list-style: none;
+ margin: 0;
+ text-align: right;
+}
+.nav li {
+ border-right: 1px solid #d7d7d7;
+ display: inline;
+ padding: 0 .75em;
+ white-space: nowrap;
+}
+.nav li.last { border-right: none }
+
+/* Main navigation bar */
+#mainnav {
+ background: #fff url(../topbar_gradient.png) 0 0;
+ border: 1px solid #000;
+ font: normal 10px verdana,'Bitstream Vera Sans',helvetica,arial,sans-serif;
+ margin: .66em 0 .33em;
+ padding: .2em 0;
+}
+#mainnav li { border-right: none; padding: .25em 0 }
+#mainnav :link, #mainnav :visited {
+ background: url(../dots.gif) 0 0 no-repeat;
+ border-right: 1px solid #fff;
+ border-bottom: none;
+ border-left: 1px solid #555;
+ color: #000;
+ padding: .2em 20px;
+}
+* html #mainnav :link, * html #mainnav :visited { background-position: 1px 0 }
+#mainnav :link:hover, #mainnav :visited:hover {
+ background-color: #ccc;
+ border-right: 1px solid #ddd;
+}
+#mainnav .active :link, #mainnav .active :visited {
+ background: #000 url(../topbar_gradient2.png) 0 0 repeat-x;
+ border-top: none;
+ border-right: 1px solid #000;
+ color: #eee;
+ font-weight: bold;
+}
+#mainnav .active :link:hover, #mainnav .active :visited:hover {
+ border-right: 1px solid #000;
+}
+
+/* Context-dependent navigation links */
+#ctxtnav { min-height: 1em }
+#ctxtnav li ul {
+ background: #f7f7f7;
+ color: #ccc;
+ border: 1px solid;
+ padding: 0;
+ display: inline;
+ margin: 0;
+}
+#ctxtnav li li { padding: 0; }
+#ctxtnav li li :link, #ctxtnav li li :visited { padding: 0 1em }
+#ctxtnav li li :link:hover, #ctxtnav li li :visited:hover {
+ background: #bba;
+ color: #fff;
+}
+
+.trac-nav, .trac-topnav {
+ float: right;
+ font-size: 80%;
+}
+.trac-topnav {
+ margin-top: 14px;
+}
+
+/* Alternate links */
+#altlinks { clear: both; text-align: center }
+#altlinks h3 { font-size: 12px; letter-spacing: normal; margin: 0 }
+#altlinks ul { list-style: none; margin: 0; padding: 0 0 1em }
+#altlinks li {
+ border-right: 1px solid #d7d7d7;
+ display: inline;
+ font-size: 11px;
+ line-height: 1.5;
+ padding: 0 1em;
+ white-space: nowrap;
+}
+#altlinks li.last { border-right: none }
+#altlinks li :link, #altlinks li :visited {
+ background-repeat: no-repeat;
+ color: #666;
+ border: none;
+ padding: 0 0 2px;
+}
+#altlinks li a.ics { background-image: url(../ics.png); padding-left: 22px }
+#altlinks li a.rss { background-image: url(../feed.png); padding-left: 20px }
+
+/* Footer */
+#footer {
+  clear: both;
+  color: #bbb;
+  font-size: 10px;
+  border-top: 1px solid;
+  height: 31px;
+  padding: .25em 0;
+}
+#footer :link, #footer :visited { color: #bbb; }
+#footer hr { display: none }
+#footer #tracpowered { border: 0; float: left }
+#footer #tracpowered:hover { background: transparent }
+#footer p { margin: 0 }
+#footer p.left {
+  float: left;
+  margin-left: 1em;
+  padding: 0 1em;
+  border-left: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+}
+#footer p.right {
+  float: right;
+  text-align: right;
+}
+
+#content { padding-bottom: 2em; position: relative }
+
+#help {
+ clear: both;
+ color: #999;
+ font-size: 90%;
+ margin: 1em;
+ text-align: right;
+}
+#help :link, #help :visited { cursor: help }
+#help hr { display: none }
+
+/* Section folding */
+.foldable :link, .foldable :visited {
+ background: url(../expanded.png) 0 50% no-repeat;
+ border: none;
+ padding-left: 16px;
+}
+.foldable :link:hover, .foldable :visited:hover { background-color: transparent }
+.collapsed > .foldable :link, .collapsed > .foldable :visited {
+ background-image: url(../collapsed.png);
+}
+.collapsed > div, .collapsed > table, .collapsed > ul, .collapsed > dl { display: none }
+fieldset > legend.foldable :link, fieldset > legend.foldable :visited {
+ color: #666;
+ font-size: 110%;
+}
+
+/* Page preferences form */
+#prefs {
+ background: #f7f7f0;
+ border: 1px outset #998;
+ float: right;
+ font-size: 9px;
+ padding: .8em;
+ position: relative;
+ margin: 0 1em 1em;
+}
+* html #prefs { width: 26em } /* Set width only for IE */
+#prefs input, #prefs select { font-size: 9px; vertical-align: middle }
+#prefs fieldset {
+ background: transparent;
+ border: none;
+ margin: .5em;
+ padding: 0;
+}
+#prefs fieldset legend {
+ background: transparent;
+ color: #000;
+ font-size: 9px;
+ font-weight: normal;
+ margin: 0 0 0 -1.5em;
+ padding: 0;
+}
+#prefs .buttons { text-align: right }
+
+/* Version information (browser, wiki, attachments) */
+#info {
+ margin: 1em 0 0 0;
+ background: #f7f7f0;
+ border: 1px solid #d7d7d7;
+ border-collapse: collapse;
+ border-spacing: 0;
+ clear: both;
+ width: 100%;
+}
+#info th, #info td { font-size: 85%; padding: 2px .5em; vertical-align: top }
+#info th { font-weight: bold; text-align: left; white-space: nowrap }
+#info td.message { width: 100% }
+#info .message ul { padding: 0; margin: 0 2em }
+#info .message p { margin: 0; padding: 0 }
+
+/* Wiki */
+.wikipage { padding-left: 18px }
+.wikipage h1, .wikipage h2, .wikipage h3 { margin-left: -18px }
+.wikipage table h1, .wikipage table h2, .wikipage table h3 { margin-left: 0px }
+div.compact > p:first-child { margin-top: 0 }
+div.compact > p:last-child { margin-bottom: 0 }
+
+a.missing:link, a.missing:visited, a.missing, span.missing,
+a.forbidden, span.forbidden { color: #998 }
+a.missing:hover { color: #000 }
+a.closed:link, a.closed:visited, span.closed { text-decoration: line-through }
+
+/* User-selectable styles for blocks */
+.important {
+ background: #fcb;
+ border: 1px dotted #d00;
+ color: #500;
+ padding: 0 .5em 0 .5em;
+ margin: .5em;
+}
+
+dl.wiki dt { font-weight: bold }
+dl.compact dt { float: left; padding-right: .5em }
+dl.compact dd { margin: 0; padding: 0 }
+
+pre.wiki, pre.literal-block {
+ background: #f7f7f7;
+ border: 1px solid #d7d7d7;
+ margin: 1em 1.75em;
+ padding: .25em;
+ overflow: auto;
+}
+
+blockquote.citation { 
+ margin: -0.6em 0;
+ border-style: solid; 
+ border-width: 0 0 0 2px; 
+ padding-left: .5em;
+ border-color: #b44; 
+}
+.citation blockquote.citation { border-color: #4b4; }
+.citation .citation blockquote.citation { border-color: #44b; }
+.citation .citation .citation blockquote.citation { border-color: #c55; }
+
+table.wiki {
+ border: 1px solid #ccc;
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+table.wiki td { border: 1px solid #ccc;  padding: .1em .25em; }
+table.wiki th {
+ border: 1px solid #bbb;
+ padding: .1em .25em;
+ background-color: #f7f7f7;
+}
+
+.wikitoolbar {
+ margin-top: 0.3em;
+ margin-left: 2px;
+ border: solid #d7d7d7;
+ border-width: 1px 1px 1px 0;
+ height: 18px;
+ width: 234px;
+}
+.wikitoolbar :link, .wikitoolbar :visited {
+ background: transparent url(../edit_toolbar.png) no-repeat;
+ border: 1px solid #fff;
+ border-left-color: #d7d7d7;
+ cursor: default;
+ display: block;
+ float: left;
+ width: 24px;
+ height: 16px;
+}
+.wikitoolbar :link:hover, .wikitoolbar :visited:hover {
+ background-color: transparent;
+ border: 1px solid #fb2;
+}
+.wikitoolbar a#em { background-position: 0 0 }
+.wikitoolbar a#strong { background-position: 0 -16px }
+.wikitoolbar a#heading { background-position: 0 -32px }
+.wikitoolbar a#link { background-position: 0 -48px }
+.wikitoolbar a#code { background-position: 0 -64px }
+.wikitoolbar a#hr { background-position: 0 -80px }
+.wikitoolbar a#np { background-position: 0 -96px }
+.wikitoolbar a#br { background-position: 0 -112px }
+.wikitoolbar a#img { background-position: 0 -128px }
+
+/* Textarea resizer */
+div.trac-resizable { display: table; width: 1px }
+div.trac-resizable > div { display: table-cell }
+div.trac-resizable textarea { display: block; margin-bottom: 0 }
+div.trac-grip {
+ height: 5px;
+ overflow: hidden;
+ background: #eee url(../grip.png) no-repeat center 1px;
+ border: 1px solid #ddd;
+ border-top-width: 0;
+ cursor: s-resize;
+}
+
+/* Styles for the form for adding attachments. */
+#attachment .field { margin-top: 1.3em }
+#attachment label { padding-left: .2em }
+#attachment fieldset { margin-top: 2em }
+#attachment fieldset .field { float: left; margin: 0 1em .5em 0 }
+#attachment .options { float: left; padding: 0 0 1em 1em }
+#attachment br { clear: left }
+.attachment #preview { margin-top: 1em }
+
+/* Styles for the list of attachments. */
+#attachments > div { border: 1px outset #996; padding: 1em }
+#attachments .attachments { margin-left: 2em; padding: 0 }
+#attachments dt { display: list-item; list-style: square; }
+#attachments dd { font-style: italic; margin-left: 0; padding-left: 0; }
+
+/* Styles for tabular listings such as those used for displaying directory
+   contents and report results. */
+table.listing {
+ clear: both;
+ border-bottom: 1px solid #d7d7d7;
+ border-collapse: collapse;
+ border-spacing: 0;
+ margin-top: 1em;
+ width: 100%;
+}
+table.listing th { text-align: left; padding: 0 1em .1em 0; font-size: 12px }
+table.listing thead { background: #f7f7f0 }
+table.listing thead th {
+ border: 1px solid #d7d7d7;
+ border-bottom-color: #999;
+ font-size: 11px;
+ font-weight: bold;
+ padding: 2px .5em;
+ vertical-align: bottom;
+}
+table.listing thead th :link:hover, table.listing thead th :visited:hover {
+ background-color: transparent;
+}
+table.listing thead th a { border: none; padding-right: 12px }
+table.listing th.asc a, table.listing th.desc a { font-weight: bold }
+table.listing th.asc a, table.listing th.desc a {
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+table.listing th.asc a { background-image: url(../asc.png) }
+table.listing th.desc a { background-image: url(../desc.png) }
+table.listing tbody td, table.listing tbody th {
+ border: 1px dotted #ddd;
+ padding: .3em .5em;
+ vertical-align: top;
+}
+table.listing tbody td a:hover, table.listing tbody th a:hover {
+ background-color: blue;
+}
+table.listing tbody tr { border-top: 1px solid #ddd }
+table.listing tbody tr.even { background-color: #fcfcfc }
+table.listing tbody tr.odd { background-color: #f7f7f7 }
+table.listing tbody tr:hover { background: #eed !important }
+table.listing tbody tr.focus { background: #ddf !important }
+
+/* Styles for the page history table
+   (extends the styles for "table.listing") */
+#fieldhist td { padding: 0 .5em }
+#fieldhist td.date, #fieldhist td.diff, #fieldhist td.version,
+#fieldhist td.author {
+ white-space: nowrap;
+}
+#fieldhist td.version { text-align: center }
+#fieldhist td.comment { width: 100% }
+
+/* Auto-completion interface */
+.suggestions { background: #fff; border: 1px solid #886; color: #222; }
+.suggestions ul {
+  font-family: sans-serif;
+  max-height: 20em;
+  min-height: 3em;
+  list-style: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  width: 440px;
+}
+* html .suggestions ul { height: 10em; }
+.suggestions li { background: #fff; cursor: pointer; padding: 2px 5px }
+.suggestions li.selected { background: #b9b9b9 }
+
+/* Styles for the error page (and rst errors) */
+#content.error .message, div.system-message {
+ background: #fdc;
+ border: 2px solid #d00;
+ color: #500;
+ padding: .5em;
+ margin: 1em 0;
+}
+#content.error div.message pre, div.system-message pre {
+  margin-left: 1em;
+  overflow: hidden;
+  white-space: normal;
+}
+div.system-message p { margin: 0; }
+div.system-message p.system-message-title { font-weight: bold; }
+
+#warning.system-message, .warning.system-message { background: #ffb; border: 1px solid #000; }
+#warning.system-message li { list-style-type: square; }
+
+#notice.system-message, .notice.system-message { background: #dfd; border: 1px solid #000; }
+#notice.system-message li { list-style-type: square; }
+
+#content.error form.newticket { display: inline; }
+#content.error form.newticket textarea { display: none; }
+
+#content.error #systeminfo, #content.error #plugins { margin: 1em; width: auto; }
+#content.error #systeminfo th, #content.error #systeminfo td,
+#content.error #plugins th, #content.error #plugins td { font-size: 90%; }
+#content.error #systeminfo th, #content.error #plugins th { background: #f7f7f7; font-weight: bold; }
+
+#content.error #traceback { margin-left: 1em; }
+#content.error #traceback :link, #content.error #traceback :visited {
+  border: none;
+}
+#content.error #tbtoggle { font-size: 80%; }
+#content.error #traceback div { margin-left: 1em; }
+#content.error #traceback h3 { font-size: 95%; margin: .5em 0 0; }
+#content.error #traceback :link var, #content.error #traceback :visited var {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: bold;
+}
+#content.error #traceback span.file { color: #666; font-size: 85%; }
+#content.error #traceback ul { list-style: none; margin: .5em 0; padding: 0; }
+#content.error #traceback table.code td { white-space: pre; font-size: 90%; }
+#content.error #traceback table.code tr.current td { background: #e6e6e6; }
+#content.error #traceback table { margin: .5em 0 1em;  }
+#content.error #traceback th, #content.error #traceback td {
+  font-size: 85%; padding: 1px;
+}
+#content.error #traceback th var {
+  font-family: monospace;
+  font-style: normal;
+}
+#content.error #traceback td code { white-space: pre; }
+#content.error #traceback pre { font-size: 95%; }
+
+#content.error #plugins td.file { color: #666; }
+
+#content .paging { margin: 0 0 2em; padding: .5em 0 0;
+  font-size: 85%; line-height: 2em; text-align: center;
+}
+#content .paging .current { 
+  padding: .1em .3em;
+  border: 1px solid #333;
+  background: #999; color: #fff; 
+}
+
+#content .paging :link, #content .paging :visited {
+  padding: .1em .3em;
+  border: 1px solid #666;
+  background: transparent; color: #666;
+}
+#content .paging :link:hover, #content .paging :visited:hover {
+  background: #999; color: #fff;  border-color: #333;
+}
+#content .paging .previous a, 
+#content .paging .next a {
+  font-size: 150%; font-weight: bold; border: none;
+}
+#content .paging .previous a:hover,
+#content .paging .next a:hover {
+  background: transparent; color: #666;
+}
+
+#content h2 .numresults { color: #666; font-size: 90%; }
+
+/* Styles for search word highlighting */
+@media screen {
+ .searchword0 { background: #ff9 }
+ .searchword1 { background: #cfc }
+ .searchword2 { background: #cff }
+ .searchword3 { background: #ccf }
+ .searchword4 { background: #fcf }
+}
+
+@media print {
+ #header, #altlinks, #footer, #help { display: none }
+ .nav, form, .buttons form, form .buttons, form .inlinebuttons,
+ .noprint, .trac-rawlink, .trac-nav, .trac-topnav {
+   display: none;
+ }
+ form.printableform { display: block }
+}
+п=еяэ      _DЯ_DаBzt_M<O   6    :https://www.virtualbox.org/chrome/common/css/trac.css necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 18:07:12 GMT
+Server: Oracle-Application-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' 'unsafe-inline'; img-src * data:; frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Content-Length: 17843
+Last-Modified: Sat, 02 Apr 2016 14:42:48 GMT
+Content-Type: text/css
+Content-Language: en
+ original-response-headers Date: Mon, 24 Aug 2020 18:07:12 GMT
+Server: Oracle-Application-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' 'unsafe-inline'; img-src * data:; frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Content-Length: 17843
+Last-Modified: Sat, 02 Apr 2016 14:42:48 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/css
+Content-Language: en
+ ctid 5 uncompressed-len 0 net-response-time-onstart 963 net-response-time-onstop 1276   EГ

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/mandoc.css" type="text/css" media="all">
+  <title>shutdown(8) - OpenBSD manual pages</title>
+</head>
+<body>
+<section>
+<h1><a href="https://www.openbsd.org/">OpenBSD</a> manual page server</h1>
+</section>
+<form action="/" method="get" autocomplete="off" autocapitalize="none">
+  <fieldset>
+    <legend>Manual Page Search Parameters</legend>
+    <input type="search" name="query" value="shutdown" size="40">
+    <button type="submit" name="apropos" value="0">man</button>
+    <button type="submit" name="apropos" value="1">apropos</button>
+    <br/>
+    <select name="sec">
+      <option value="0">All Sections</option>
+      <option value="1">1 - General Commands</option>
+      <option value="2">2 - System Calls</option>
+      <option value="3">3 - Library Functions</option>
+      <option value="3p">3p - Perl Library</option>
+      <option value="4">4 - Device Drivers</option>
+      <option value="5">5 - File Formats</option>
+      <option value="6">6 - Games</option>
+      <option value="7">7 - Miscellaneous Information</option>
+      <option value="8" selected="selected">8 - System Manager's Manual</option>
+      <option value="9">9 - Kernel Developer's Manual</option>
+    </select>
+    <select name="arch">
+      <option value="default" selected="selected">All Architectures</option>
+      <option>amd64</option>
+      <option>alpha</option>
+      <option>armv7</option>
+      <option>arm64</option>
+      <option>hppa</option>
+      <option>i386</option>
+      <option>landisk</option>
+      <option>loongson</option>
+      <option>luna88k</option>
+      <option>macppc</option>
+      <option>mips64</option>
+      <option>octeon</option>
+      <option>powerpc64</option>
+      <option>sgi</option>
+      <option>socppc</option>
+      <option>sparc64</option>
+      <option>amiga</option>
+      <option>arc</option>
+      <option>armish</option>
+      <option>arm32</option>
+      <option>atari</option>
+      <option>aviion</option>
+      <option>beagle</option>
+      <option>cats</option>
+      <option>hppa64</option>
+      <option>hp300</option>
+      <option>ia64</option>
+      <option>mac68k</option>
+      <option>mvme68k</option>
+      <option>mvme88k</option>
+      <option>mvmeppc</option>
+      <option>palm</option>
+      <option>pc532</option>
+      <option>pegasos</option>
+      <option>pmax</option>
+      <option>powerpc</option>
+      <option>solbourne</option>
+      <option>sparc</option>
+      <option>sun3</option>
+      <option>vax</option>
+      <option>wgrisc</option>
+      <option>x68k</option>
+      <option>zaurus</option>
+    </select>
+    <select name="manpath">
+      <option selected="selected">OpenBSD-current</option>
+      <option>ports-current</option>
+      <option>OpenBSD-6.7</option>
+      <option>OpenBSD-6.6</option>
+      <option>OpenBSD-6.5</option>
+      <option>OpenBSD-6.4</option>
+      <option>OpenBSD-6.3</option>
+      <option>OpenBSD-6.2</option>
+      <option>OpenBSD-6.1</option>
+      <option>OpenBSD-6.0</option>
+      <option>OpenBSD-5.9</option>
+      <option>OpenBSD-5.8</option>
+      <option>OpenBSD-5.7</option>
+      <option>OpenBSD-5.6</option>
+      <option>OpenBSD-5.5</option>
+      <option>OpenBSD-5.4</option>
+      <option>OpenBSD-5.3</option>
+      <option>OpenBSD-5.2</option>
+      <option>OpenBSD-5.1</option>
+      <option>OpenBSD-5.0</option>
+      <option>OpenBSD-4.9</option>
+      <option>OpenBSD-4.8</option>
+      <option>OpenBSD-4.7</option>
+      <option>OpenBSD-4.6</option>
+      <option>OpenBSD-4.5</option>
+      <option>OpenBSD-4.4</option>
+      <option>OpenBSD-4.3</option>
+      <option>OpenBSD-4.2</option>
+      <option>OpenBSD-4.1</option>
+      <option>OpenBSD-4.0</option>
+      <option>OpenBSD-3.9</option>
+      <option>OpenBSD-3.8</option>
+      <option>OpenBSD-3.7</option>
+      <option>OpenBSD-3.6</option>
+      <option>OpenBSD-3.5</option>
+      <option>OpenBSD-3.4</option>
+      <option>OpenBSD-3.3</option>
+      <option>OpenBSD-3.2</option>
+      <option>OpenBSD-3.1</option>
+      <option>OpenBSD-3.0</option>
+      <option>OpenBSD-2.9</option>
+      <option>OpenBSD-2.8</option>
+      <option>OpenBSD-2.7</option>
+      <option>OpenBSD-2.6</option>
+      <option>OpenBSD-2.5</option>
+      <option>OpenBSD-2.4</option>
+      <option>OpenBSD-2.3</option>
+      <option>OpenBSD-2.2</option>
+    </select>
+  </fieldset>
+</form>
+<hr>
+<table class="head">
+  <tr>
+    <td class="head-ltitle">SHUTDOWN(8)</td>
+    <td class="head-vol">System Manager's Manual</td>
+    <td class="head-rtitle">SHUTDOWN(8)</td>
+  </tr>
+</table>
+<div class="manual-text">
+<section class="Sh">
+<h1 class="Sh" id="NAME"><a class="permalink" href="#NAME">NAME</a></h1>
+<p class="Pp"><code class="Nm">shutdown</code> &#x2014; <span class="Nd">close
+    down the system at a given time</span></p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="SYNOPSIS"><a class="permalink" href="#SYNOPSIS">SYNOPSIS</a></h1>
+<table class="Nm">
+  <tr>
+    <td><code class="Nm">shutdown</code></td>
+    <td>[<code class="Fl">-</code>] [<code class="Fl">-dfhknpr</code>]
+      <var class="Ar">time</var> [<var class="Ar">warning-message
+      ...</var>]</td>
+  </tr>
+</table>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="DESCRIPTION"><a class="permalink" href="#DESCRIPTION">DESCRIPTION</a></h1>
+<p class="Pp"><code class="Nm">shutdown</code> provides an automated shutdown
+    procedure for superusers to nicely notify users when the system is shutting
+    down, saving them from system administrators, hackers, and gurus, who would
+    otherwise not bother with such niceties. When the
+    <code class="Nm">shutdown</code> command is issued without options the
+    system is placed in single user mode at the indicated time after shutting
+    down all system services.</p>
+<p class="Pp">The options are as follows:</p>
+<dl class="Bl-tag">
+  <dt id="d"><a class="permalink" href="#d"><code class="Fl">-d</code></a></dt>
+  <dd>When used with <code class="Fl">-h</code>, <code class="Fl">-p</code>, or
+      <code class="Fl">-r</code> causes system to perform a dump. This option is
+      useful for debugging system dump procedures or capturing the state of a
+      corrupted or misbehaving system. See
+      <a class="Xr" href="/savecore.8">savecore(8)</a> for information on how to
+      recover this dump.</dd>
+  <dt id="f"><a class="permalink" href="#f"><code class="Fl">-f</code></a></dt>
+  <dd>Create the file <span class="Pa">/fastboot</span> so that the file systems
+      will <a class="permalink" href="#not"><i class="Em" id="not">not</i></a>
+      be checked by <a class="Xr" href="/fsck.8">fsck(8)</a> during the next
+      boot. (See <a class="Xr" href="/rc.8">rc(8)</a>).</dd>
+  <dt id="h"><a class="permalink" href="#h"><code class="Fl">-h</code></a></dt>
+  <dd>The system is halted at the specified <var class="Ar">time</var> when
+      <code class="Nm">shutdown</code> execs
+      <a class="Xr" href="/halt.8">halt(8)</a>.</dd>
+  <dt id="k"><a class="permalink" href="#k"><code class="Fl">-k</code></a></dt>
+  <dd>Kick everybody off. The <code class="Fl">-k</code> option does not
+      actually halt the system, but leaves the system multi-user with logins
+      disabled (for all but superuser).</dd>
+  <dt id="n"><a class="permalink" href="#n"><code class="Fl">-n</code></a></dt>
+  <dd>When used with <code class="Fl">-h</code>, <code class="Fl">-p</code>, or
+      <code class="Fl">-r</code> prevents the normal
+      <a class="Xr" href="/sync.2">sync(2)</a> before stopping the system.</dd>
+  <dt id="p"><a class="permalink" href="#p"><code class="Fl">-p</code></a></dt>
+  <dd>The system is powered down at the specified <var class="Ar">time</var>.
+      The <code class="Fl">-p</code> flag is passed on to
+      <a class="Xr" href="/halt.8">halt(8)</a>, causing machines which support
+      automatic power down to do so after halting.</dd>
+  <dt id="r"><a class="permalink" href="#r"><code class="Fl">-r</code></a></dt>
+  <dd><code class="Nm">shutdown</code> execs
+      <a class="Xr" href="/reboot.8">reboot(8)</a> at the specified
+      <var class="Ar">time</var>.</dd>
+  <dt><var class="Ar">time</var></dt>
+  <dd><var class="Ar">time</var> is the time at which
+      <code class="Nm">shutdown</code> will bring the system down and may be the
+      word <var class="Ar">now</var> (indicating an immediate shutdown) or
+      specify a future time in one of two formats:
+      <var class="Ar">+number</var>, or <var class="Ar">yymmddhhmm</var>, where
+      the year, month, and day may be defaulted to the current system values.
+      The first form brings the system down in <var class="Ar">number</var>
+      minutes and the second at the absolute time specified.</dd>
+  <dt><var class="Ar">warning-message</var></dt>
+  <dd>Any other arguments comprise the warning message that is broadcast to
+      users currently logged into the system.</dd>
+  <dt><code class="Fl">-</code></dt>
+  <dd>If &#x2018;<code class="Fl">-</code>&#x2019; is supplied as an option, the
+      warning message is read from the standard input.</dd>
+</dl>
+<p class="Pp">At intervals, becoming more frequent as apocalypse approaches and
+    starting at ten hours before shutdown, warning messages are displayed on the
+    terminals of all users logged in. Five minutes before shutdown, or
+    immediately if shutdown is in less than 5 minutes, logins are disabled by
+    creating <span class="Pa">/etc/nologin</span> and copying the warning
+    message there. If this file exists when a user attempts to log in,
+    <a class="Xr" href="/login.1">login(1)</a> prints its contents and exits.
+    The file is removed just before <code class="Nm">shutdown</code> exits.</p>
+<p class="Pp" id="init">At shutdown time a message is written in the system log,
+    containing the time of shutdown, who initiated the shutdown and the reason.
+    A terminate signal is then sent to
+    <a class="permalink" href="#init"><i class="Em">init</i></a> to bring the
+    system down to single-user state (depending on above options). The time of
+    the shutdown and the warning message are placed in
+    <span class="Pa">/etc/nologin</span> and should be used to inform the users
+    about when the system will be back up and why it is going down (or anything
+    else).</p>
+<p class="Pp">You can cancel a scheduled shutdown with the
+    <a class="Xr" href="/kill.1">kill(1)</a> command by killing the shutdown
+    process.</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="FILES"><a class="permalink" href="#FILES">FILES</a></h1>
+<dl class="Bl-tag Bl-compact">
+  <dt><span class="Pa">/etc/nologin</span></dt>
+  <dd>tells login not to let anyone log in</dd>
+  <dt><span class="Pa">/etc/rc.shutdown</span></dt>
+  <dd>run by <a class="Xr" href="/rc.8">rc(8)</a> before the system is
+    shutdown</dd>
+  <dt><span class="Pa">/fastboot</span></dt>
+  <dd>tells <a class="Xr" href="/rc.8">rc(8)</a> not to run
+      <a class="Xr" href="/fsck.8">fsck(8)</a> during the next boot</dd>
+</dl>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="SEE_ALSO"><a class="permalink" href="#SEE_ALSO">SEE
+  ALSO</a></h1>
+<p class="Pp"><a class="Xr" href="/kill.1">kill(1)</a>,
+    <a class="Xr" href="/login.1">login(1)</a>,
+    <a class="Xr" href="/wall.1">wall(1)</a>,
+    <a class="Xr" href="/halt.8">halt(8)</a>,
+    <a class="Xr" href="/rc.shutdown.8">rc.shutdown(8)</a>,
+    <a class="Xr" href="/reboot.8">reboot(8)</a></p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="STANDARDS"><a class="permalink" href="#STANDARDS">STANDARDS</a></h1>
+<p class="Pp">The hours and minutes in the second time format may be separated
+    by a colon (&#x2018;:&#x2019;) for backward compatibility.</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="HISTORY"><a class="permalink" href="#HISTORY">HISTORY</a></h1>
+<p class="Pp">The <code class="Nm">shutdown</code> command appeared in
+    <span class="Ux">4.0BSD</span>.</p>
+</section>
+</div>
+<table class="foot">
+  <tr>
+    <td class="foot-date">January 21, 2015</td>
+    <td class="foot-os">OpenBSD-current</td>
+  </tr>
+</table>
+</body>
+</html>
+Â«Ôñ˜ç      _D/_D/B™Ì       #    :https://man.openbsd.org/shutdown.8 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Aug 2020 19:20:10 GMT
+Pragma: no-cache
+Server: OpenBSD httpd
+ original-response-headers Cache-Control: no-cache
+Connection: keep-alive
+Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Aug 2020 19:20:10 GMT
+Pragma: no-cache
+Server: OpenBSD httpd
+Transfer-Encoding: chunked
+ ctid 1 uncompressed-len 0 predictor::resource-count 1 predictor::https://man.openbsd.org/mandoc.css 1,1,1598304008,4096 net-response-time-onstart 696 net-response-time-onstop 830   /°

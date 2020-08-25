@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CVS log for src/games/adventure/glorkz</title>
+<meta name="robots" content="nofollow">
+<meta name="generator" content="OpenBSD-CVSweb 2.0.6">
+<meta name="description" content="OpenBSD source via CVSweb">
+<meta name="keywords" content="openbsd,cvs,source,cvsweb">
+<meta name="distribution" content="global">
+<meta name="copyright" content="content copyright 2014 by OpenBSD.">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body text="#000000" bgcolor="#ffffff">
+<p><a href="http://www.openbsd.org/"><img src="/icons/smalltitle.gif" alt="OpenBSD CVS"></a></p> <h2><font color="#e00000">CVS log for src/games/adventure/glorkz</font></h2><hr>
+<p>
+ <a href="/cgi-bin/cvsweb/src/games/adventure/#glorkz"><img src="/icons/back.gif" alt="[BACK]" border="0" width="20" height="22"></a> <b>Up to  <a href="/cgi-bin/cvsweb/#dirlist">[local]</a> / <a href="/cgi-bin/cvsweb/src/#dirlist">src</a> / <a href="/cgi-bin/cvsweb/src/games/#dirlist">games</a> / <a href="/cgi-bin/cvsweb/src/games/adventure/#dirlist">adventure</a></b>
+</p>
+<p>
+ <a href="#diff">Request diff between arbitrary revisions</a>
+</p>
+<hr noshade>
+<p>
+Default branch: MAIN<br>
+</p>
+<hr size="1" noshade>
+<p>
+<a name="rev1.1.1.1"></a><a name="netbsd_1_1"></a><a name="OPENBSD_6_7_BASE"></a><a name="OPENBSD_6_7"></a><a name="OPENBSD_6_6_BASE"></a><a name="OPENBSD_6_6"></a><a name="OPENBSD_6_5_BASE"></a><a name="OPENBSD_6_5"></a><a name="OPENBSD_6_4_BASE"></a><a name="OPENBSD_6_4"></a><a name="OPENBSD_6_3_BASE"></a><a name="OPENBSD_6_3"></a><a name="OPENBSD_6_2_BASE"></a><a name="OPENBSD_6_2"></a><a name="OPENBSD_6_1_BASE"></a><a name="OPENBSD_6_1"></a><a name="OPENBSD_6_0_BASE"></a><a name="OPENBSD_6_0"></a><a name="OPENBSD_5_9_BASE"></a><a name="OPENBSD_5_9"></a><a name="OPENBSD_5_8_BASE"></a><a name="OPENBSD_5_8"></a><a name="OPENBSD_5_7_BASE"></a><a name="OPENBSD_5_7"></a><a name="OPENBSD_5_6_BASE"></a><a name="OPENBSD_5_6"></a><a name="OPENBSD_5_5_BASE"></a><a name="OPENBSD_5_5"></a><a name="OPENBSD_5_4_BASE"></a><a name="OPENBSD_5_4"></a><a name="OPENBSD_5_3_BASE"></a><a name="OPENBSD_5_3"></a><a name="OPENBSD_5_2_BASE"></a><a name="OPENBSD_5_2"></a><a name="OPENBSD_5_1_BASE"></a><a name="OPENBSD_5_1"></a><a name="OPENBSD_5_0_BASE"></a><a name="OPENBSD_5_0"></a><a name="OPENBSD_4_9_BASE"></a><a name="OPENBSD_4_9"></a><a name="OPENBSD_4_8_BASE"></a><a name="OPENBSD_4_8"></a><a name="OPENBSD_4_7_BASE"></a><a name="OPENBSD_4_7"></a><a name="OPENBSD_4_6_BASE"></a><a name="OPENBSD_4_6"></a><a name="OPENBSD_4_5_BASE"></a><a name="OPENBSD_4_5"></a><a name="OPENBSD_4_4_BASE"></a><a name="OPENBSD_4_4"></a><a name="OPENBSD_4_3_BASE"></a><a name="OPENBSD_4_3"></a><a name="OPENBSD_4_2_BASE"></a><a name="OPENBSD_4_2"></a><a name="OPENBSD_4_1_BASE"></a><a name="OPENBSD_4_1"></a><a name="OPENBSD_4_0_BASE"></a><a name="OPENBSD_4_0"></a><a name="OPENBSD_3_9_BASE"></a><a name="OPENBSD_3_9"></a><a name="OPENBSD_3_8_BASE"></a><a name="OPENBSD_3_8"></a><a name="OPENBSD_3_7_BASE"></a><a name="OPENBSD_3_7"></a><a name="OPENBSD_3_6_BASE"></a><a name="OPENBSD_3_6"></a><a name="OPENBSD_3_5_BASE"></a><a name="OPENBSD_3_5"></a><a name="OPENBSD_3_4_BASE"></a><a name="OPENBSD_3_4"></a><a name="OPENBSD_3_3_BASE"></a><a name="OPENBSD_3_3"></a><a name="OPENBSD_3_2_BASE"></a><a name="OPENBSD_3_2"></a><a name="OPENBSD_3_1_BASE"></a><a name="OPENBSD_3_1"></a><a name="OPENBSD_3_0_BASE"></a><a name="OPENBSD_3_0"></a><a name="OPENBSD_2_9_BASE"></a><a name="OPENBSD_2_9"></a><a name="OPENBSD_2_8_BASE"></a><a name="OPENBSD_2_8"></a><a name="OPENBSD_2_7_BASE"></a><a name="OPENBSD_2_7"></a><a name="OPENBSD_2_6_BASE"></a><a name="OPENBSD_2_6"></a><a name="OPENBSD_2_5_BASE"></a><a name="OPENBSD_2_5"></a><a name="OPENBSD_2_4_BASE"></a><a name="OPENBSD_2_4"></a><a name="OPENBSD_2_3_BASE"></a><a name="OPENBSD_2_3"></a><a name="OPENBSD_2_2_BASE"></a><a name="OPENBSD_2_2"></a><a name="OPENBSD_2_1_BASE"></a><a name="OPENBSD_2_1"></a><a name="OPENBSD_2_0_BASE"></a><a name="OPENBSD_2_0"></a><a name="HEAD"></a><a name="MAIN"></a>
+ Revision <a href="glorkz?rev=1.1.1.1&amp;content-type=text/x-cvsweb-markup"><b>1.1.1.1</b></a> / (<a href="/cgi-bin/cvsweb/~checkout~/src/games/adventure/glorkz?rev=1.1.1.1&amp;content-type=text/plain" target="cvs_checkout" onclick="window.open('/cgi-bin/cvsweb/~checkout~/src/games/adventure/glorkz?rev=1.1.1.1&amp;content-type=text/plain','cvs_checkout','resizable,scrollbars');return false"><b>download</b></a>) - <a href="/cgi-bin/cvsweb/src/games/adventure/glorkz?annotate=1.1.1.1">annotate</a> - <a href="/cgi-bin/cvsweb/src/games/adventure/glorkz?r1=1.1.1.1">[select for diffs]</a> <i>(vendor branch)</i>, <i>Wed Oct 18 08:48:35 1995 UTC</i> (24 years, 10 months ago) by <i>deraadt</i>
+<br>Branch: <b><a href="./glorkz?only_with_tag=MAIN">MAIN</a>
+</b>
+<br>CVS Tags: <b><a href="./glorkz?only_with_tag=netbsd_1_1">netbsd_1_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_7_BASE">OPENBSD_6_7_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_7">OPENBSD_6_7</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_6_BASE">OPENBSD_6_6_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_6">OPENBSD_6_6</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_5_BASE">OPENBSD_6_5_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_5">OPENBSD_6_5</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_4_BASE">OPENBSD_6_4_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_4">OPENBSD_6_4</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_3_BASE">OPENBSD_6_3_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_3">OPENBSD_6_3</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_2_BASE">OPENBSD_6_2_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_2">OPENBSD_6_2</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_1_BASE">OPENBSD_6_1_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_1">OPENBSD_6_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_0_BASE">OPENBSD_6_0_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_6_0">OPENBSD_6_0</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_9_BASE">OPENBSD_5_9_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_9">OPENBSD_5_9</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_8_BASE">OPENBSD_5_8_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_8">OPENBSD_5_8</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_7_BASE">OPENBSD_5_7_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_7">OPENBSD_5_7</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_6_BASE">OPENBSD_5_6_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_6">OPENBSD_5_6</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_5_BASE">OPENBSD_5_5_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_5">OPENBSD_5_5</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_4_BASE">OPENBSD_5_4_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_4">OPENBSD_5_4</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_3_BASE">OPENBSD_5_3_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_3">OPENBSD_5_3</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_2_BASE">OPENBSD_5_2_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_2">OPENBSD_5_2</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_1_BASE">OPENBSD_5_1_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_1">OPENBSD_5_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_0_BASE">OPENBSD_5_0_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_5_0">OPENBSD_5_0</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_9_BASE">OPENBSD_4_9_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_9">OPENBSD_4_9</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_8_BASE">OPENBSD_4_8_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_8">OPENBSD_4_8</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_7_BASE">OPENBSD_4_7_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_7">OPENBSD_4_7</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_6_BASE">OPENBSD_4_6_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_6">OPENBSD_4_6</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_5_BASE">OPENBSD_4_5_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_5">OPENBSD_4_5</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_4_BASE">OPENBSD_4_4_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_4">OPENBSD_4_4</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_3_BASE">OPENBSD_4_3_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_3">OPENBSD_4_3</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_2_BASE">OPENBSD_4_2_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_2">OPENBSD_4_2</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_1_BASE">OPENBSD_4_1_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_1">OPENBSD_4_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_0_BASE">OPENBSD_4_0_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_4_0">OPENBSD_4_0</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_9_BASE">OPENBSD_3_9_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_9">OPENBSD_3_9</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_8_BASE">OPENBSD_3_8_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_8">OPENBSD_3_8</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_7_BASE">OPENBSD_3_7_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_7">OPENBSD_3_7</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_6_BASE">OPENBSD_3_6_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_6">OPENBSD_3_6</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_5_BASE">OPENBSD_3_5_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_5">OPENBSD_3_5</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_4_BASE">OPENBSD_3_4_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_4">OPENBSD_3_4</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_3_BASE">OPENBSD_3_3_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_3">OPENBSD_3_3</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_2_BASE">OPENBSD_3_2_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_2">OPENBSD_3_2</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_1_BASE">OPENBSD_3_1_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_1">OPENBSD_3_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_0_BASE">OPENBSD_3_0_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_3_0">OPENBSD_3_0</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_9_BASE">OPENBSD_2_9_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_9">OPENBSD_2_9</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_8_BASE">OPENBSD_2_8_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_8">OPENBSD_2_8</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_7_BASE">OPENBSD_2_7_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_7">OPENBSD_2_7</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_6_BASE">OPENBSD_2_6_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_6">OPENBSD_2_6</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_5_BASE">OPENBSD_2_5_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_5">OPENBSD_2_5</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_4_BASE">OPENBSD_2_4_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_4">OPENBSD_2_4</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_3_BASE">OPENBSD_2_3_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_3">OPENBSD_2_3</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_2_BASE">OPENBSD_2_2_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_2">OPENBSD_2_2</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_1_BASE">OPENBSD_2_1_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_1">OPENBSD_2_1</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_0_BASE">OPENBSD_2_0_BASE</a>,
+<a href="./glorkz?only_with_tag=OPENBSD_2_0">OPENBSD_2_0</a>,
+<a href="./glorkz?only_with_tag=HEAD">HEAD</a>
+</b><br>Changes since <b>1.1: +0 -0 lines</b><br>Diff to previous <a href="/cgi-bin/cvsweb/src/games/adventure/glorkz.diff?r1=1.1&amp;r2=1.1.1.1">1.1</a> (<a href="/cgi-bin/cvsweb/src/games/adventure/glorkz.diff?r1=1.1&amp;r2=1.1.1.1&amp;f=h">colored</a>)
+</p>
+<pre>
+initial import of NetBSD tree
+</pre>
+<hr size="1" noshade>
+<p>
+<a name="rev1.1"></a>
+ Revision <a href="glorkz?rev=1.1&amp;content-type=text/x-cvsweb-markup"><b>1.1</b></a> / (<a href="/cgi-bin/cvsweb/~checkout~/src/games/adventure/glorkz?rev=1.1&amp;content-type=text/plain" target="cvs_checkout" onclick="window.open('/cgi-bin/cvsweb/~checkout~/src/games/adventure/glorkz?rev=1.1&amp;content-type=text/plain','cvs_checkout','resizable,scrollbars');return false"><b>download</b></a>) - <a href="/cgi-bin/cvsweb/src/games/adventure/glorkz?annotate=1.1">annotate</a> - <a href="/cgi-bin/cvsweb/src/games/adventure/glorkz?r1=1.1">[select for diffs]</a>, <i>Wed Oct 18 08:48:35 1995 UTC</i> (24 years, 10 months ago) by <i>deraadt</i>
+<br>Branch point for: <b><a href="./glorkz?only_with_tag=MAIN">MAIN</a>
+</b>
+<br>
+</p>
+<pre>
+Initial revision
+</pre>
+<hr noshade>
+<p>
+<a name="diff">
+This form allows you to request diff's between any two
+revisions of a file.  You may select a symbolic revision
+name using the selection box or you may type in a numeric
+name using the type-in text box.
+</a>
+</p>
+<form method="get" action="/cgi-bin/cvsweb/src/games/adventure/glorkz.diff" name="diff_select">
+<table style="border: none">
+<tr>
+<td align="right"><label for="r1" accesskey="1">Diffs between </label>
+<select id="r1" name="r1">
+<option value="text" selected>Use Text Field</option>
+<option value="1.1.1.1:netbsd_1_1">netbsd_1_1</option>
+<option value="1.1.1.1:OPENBSD_6_7_BASE">OPENBSD_6_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_7">OPENBSD_6_7</option>
+<option value="1.1.1.1:OPENBSD_6_6_BASE">OPENBSD_6_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_6">OPENBSD_6_6</option>
+<option value="1.1.1.1:OPENBSD_6_5_BASE">OPENBSD_6_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_5">OPENBSD_6_5</option>
+<option value="1.1.1.1:OPENBSD_6_4_BASE">OPENBSD_6_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_4">OPENBSD_6_4</option>
+<option value="1.1.1.1:OPENBSD_6_3_BASE">OPENBSD_6_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_3">OPENBSD_6_3</option>
+<option value="1.1.1.1:OPENBSD_6_2_BASE">OPENBSD_6_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_2">OPENBSD_6_2</option>
+<option value="1.1.1.1:OPENBSD_6_1_BASE">OPENBSD_6_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_1">OPENBSD_6_1</option>
+<option value="1.1.1.1:OPENBSD_6_0_BASE">OPENBSD_6_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_0">OPENBSD_6_0</option>
+<option value="1.1.1.1:OPENBSD_5_9_BASE">OPENBSD_5_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_9">OPENBSD_5_9</option>
+<option value="1.1.1.1:OPENBSD_5_8_BASE">OPENBSD_5_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_8">OPENBSD_5_8</option>
+<option value="1.1.1.1:OPENBSD_5_7_BASE">OPENBSD_5_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_7">OPENBSD_5_7</option>
+<option value="1.1.1.1:OPENBSD_5_6_BASE">OPENBSD_5_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_6">OPENBSD_5_6</option>
+<option value="1.1.1.1:OPENBSD_5_5_BASE">OPENBSD_5_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_5">OPENBSD_5_5</option>
+<option value="1.1.1.1:OPENBSD_5_4_BASE">OPENBSD_5_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_4">OPENBSD_5_4</option>
+<option value="1.1.1.1:OPENBSD_5_3_BASE">OPENBSD_5_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_3">OPENBSD_5_3</option>
+<option value="1.1.1.1:OPENBSD_5_2_BASE">OPENBSD_5_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_2">OPENBSD_5_2</option>
+<option value="1.1.1.1:OPENBSD_5_1_BASE">OPENBSD_5_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_1">OPENBSD_5_1</option>
+<option value="1.1.1.1:OPENBSD_5_0_BASE">OPENBSD_5_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_0">OPENBSD_5_0</option>
+<option value="1.1.1.1:OPENBSD_4_9_BASE">OPENBSD_4_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_9">OPENBSD_4_9</option>
+<option value="1.1.1.1:OPENBSD_4_8_BASE">OPENBSD_4_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_8">OPENBSD_4_8</option>
+<option value="1.1.1.1:OPENBSD_4_7_BASE">OPENBSD_4_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_7">OPENBSD_4_7</option>
+<option value="1.1.1.1:OPENBSD_4_6_BASE">OPENBSD_4_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_6">OPENBSD_4_6</option>
+<option value="1.1.1.1:OPENBSD_4_5_BASE">OPENBSD_4_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_5">OPENBSD_4_5</option>
+<option value="1.1.1.1:OPENBSD_4_4_BASE">OPENBSD_4_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_4">OPENBSD_4_4</option>
+<option value="1.1.1.1:OPENBSD_4_3_BASE">OPENBSD_4_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_3">OPENBSD_4_3</option>
+<option value="1.1.1.1:OPENBSD_4_2_BASE">OPENBSD_4_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_2">OPENBSD_4_2</option>
+<option value="1.1.1.1:OPENBSD_4_1_BASE">OPENBSD_4_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_1">OPENBSD_4_1</option>
+<option value="1.1.1.1:OPENBSD_4_0_BASE">OPENBSD_4_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_0">OPENBSD_4_0</option>
+<option value="1.1.1.1:OPENBSD_3_9_BASE">OPENBSD_3_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_9">OPENBSD_3_9</option>
+<option value="1.1.1.1:OPENBSD_3_8_BASE">OPENBSD_3_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_8">OPENBSD_3_8</option>
+<option value="1.1.1.1:OPENBSD_3_7_BASE">OPENBSD_3_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_7">OPENBSD_3_7</option>
+<option value="1.1.1.1:OPENBSD_3_6_BASE">OPENBSD_3_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_6">OPENBSD_3_6</option>
+<option value="1.1.1.1:OPENBSD_3_5_BASE">OPENBSD_3_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_5">OPENBSD_3_5</option>
+<option value="1.1.1.1:OPENBSD_3_4_BASE">OPENBSD_3_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_4">OPENBSD_3_4</option>
+<option value="1.1.1.1:OPENBSD_3_3_BASE">OPENBSD_3_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_3">OPENBSD_3_3</option>
+<option value="1.1.1.1:OPENBSD_3_2_BASE">OPENBSD_3_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_2">OPENBSD_3_2</option>
+<option value="1.1.1.1:OPENBSD_3_1_BASE">OPENBSD_3_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_1">OPENBSD_3_1</option>
+<option value="1.1.1.1:OPENBSD_3_0_BASE">OPENBSD_3_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_0">OPENBSD_3_0</option>
+<option value="1.1.1.1:OPENBSD_2_9_BASE">OPENBSD_2_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_9">OPENBSD_2_9</option>
+<option value="1.1.1.1:OPENBSD_2_8_BASE">OPENBSD_2_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_8">OPENBSD_2_8</option>
+<option value="1.1.1.1:OPENBSD_2_7_BASE">OPENBSD_2_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_7">OPENBSD_2_7</option>
+<option value="1.1.1.1:OPENBSD_2_6_BASE">OPENBSD_2_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_6">OPENBSD_2_6</option>
+<option value="1.1.1.1:OPENBSD_2_5_BASE">OPENBSD_2_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_5">OPENBSD_2_5</option>
+<option value="1.1.1.1:OPENBSD_2_4_BASE">OPENBSD_2_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_4">OPENBSD_2_4</option>
+<option value="1.1.1.1:OPENBSD_2_3_BASE">OPENBSD_2_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_3">OPENBSD_2_3</option>
+<option value="1.1.1.1:OPENBSD_2_2_BASE">OPENBSD_2_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_2">OPENBSD_2_2</option>
+<option value="1.1.1.1:OPENBSD_2_1_BASE">OPENBSD_2_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_1">OPENBSD_2_1</option>
+<option value="1.1.1.1:OPENBSD_2_0_BASE">OPENBSD_2_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_0">OPENBSD_2_0</option>
+<option value="1.1.1:MAIN">MAIN</option>
+<option value="1.1.1.1:HEAD">HEAD</option>
+</select>
+<input type="text" size="12" name="tr1" value="1.1" onchange="this.form.r1.selectedIndex=0"></td>
+<td><br></td>
+</tr>
+<tr>
+<td align="right"><label for="r2" accesskey="2">and </label>
+<select id="r2" name="r2">
+<option value="text" selected>Use Text Field</option>
+<option value="1.1.1.1:netbsd_1_1">netbsd_1_1</option>
+<option value="1.1.1.1:OPENBSD_6_7_BASE">OPENBSD_6_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_7">OPENBSD_6_7</option>
+<option value="1.1.1.1:OPENBSD_6_6_BASE">OPENBSD_6_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_6">OPENBSD_6_6</option>
+<option value="1.1.1.1:OPENBSD_6_5_BASE">OPENBSD_6_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_5">OPENBSD_6_5</option>
+<option value="1.1.1.1:OPENBSD_6_4_BASE">OPENBSD_6_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_4">OPENBSD_6_4</option>
+<option value="1.1.1.1:OPENBSD_6_3_BASE">OPENBSD_6_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_3">OPENBSD_6_3</option>
+<option value="1.1.1.1:OPENBSD_6_2_BASE">OPENBSD_6_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_2">OPENBSD_6_2</option>
+<option value="1.1.1.1:OPENBSD_6_1_BASE">OPENBSD_6_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_1">OPENBSD_6_1</option>
+<option value="1.1.1.1:OPENBSD_6_0_BASE">OPENBSD_6_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_6_0">OPENBSD_6_0</option>
+<option value="1.1.1.1:OPENBSD_5_9_BASE">OPENBSD_5_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_9">OPENBSD_5_9</option>
+<option value="1.1.1.1:OPENBSD_5_8_BASE">OPENBSD_5_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_8">OPENBSD_5_8</option>
+<option value="1.1.1.1:OPENBSD_5_7_BASE">OPENBSD_5_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_7">OPENBSD_5_7</option>
+<option value="1.1.1.1:OPENBSD_5_6_BASE">OPENBSD_5_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_6">OPENBSD_5_6</option>
+<option value="1.1.1.1:OPENBSD_5_5_BASE">OPENBSD_5_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_5">OPENBSD_5_5</option>
+<option value="1.1.1.1:OPENBSD_5_4_BASE">OPENBSD_5_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_4">OPENBSD_5_4</option>
+<option value="1.1.1.1:OPENBSD_5_3_BASE">OPENBSD_5_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_3">OPENBSD_5_3</option>
+<option value="1.1.1.1:OPENBSD_5_2_BASE">OPENBSD_5_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_2">OPENBSD_5_2</option>
+<option value="1.1.1.1:OPENBSD_5_1_BASE">OPENBSD_5_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_1">OPENBSD_5_1</option>
+<option value="1.1.1.1:OPENBSD_5_0_BASE">OPENBSD_5_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_5_0">OPENBSD_5_0</option>
+<option value="1.1.1.1:OPENBSD_4_9_BASE">OPENBSD_4_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_9">OPENBSD_4_9</option>
+<option value="1.1.1.1:OPENBSD_4_8_BASE">OPENBSD_4_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_8">OPENBSD_4_8</option>
+<option value="1.1.1.1:OPENBSD_4_7_BASE">OPENBSD_4_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_7">OPENBSD_4_7</option>
+<option value="1.1.1.1:OPENBSD_4_6_BASE">OPENBSD_4_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_6">OPENBSD_4_6</option>
+<option value="1.1.1.1:OPENBSD_4_5_BASE">OPENBSD_4_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_5">OPENBSD_4_5</option>
+<option value="1.1.1.1:OPENBSD_4_4_BASE">OPENBSD_4_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_4">OPENBSD_4_4</option>
+<option value="1.1.1.1:OPENBSD_4_3_BASE">OPENBSD_4_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_3">OPENBSD_4_3</option>
+<option value="1.1.1.1:OPENBSD_4_2_BASE">OPENBSD_4_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_2">OPENBSD_4_2</option>
+<option value="1.1.1.1:OPENBSD_4_1_BASE">OPENBSD_4_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_1">OPENBSD_4_1</option>
+<option value="1.1.1.1:OPENBSD_4_0_BASE">OPENBSD_4_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_4_0">OPENBSD_4_0</option>
+<option value="1.1.1.1:OPENBSD_3_9_BASE">OPENBSD_3_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_9">OPENBSD_3_9</option>
+<option value="1.1.1.1:OPENBSD_3_8_BASE">OPENBSD_3_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_8">OPENBSD_3_8</option>
+<option value="1.1.1.1:OPENBSD_3_7_BASE">OPENBSD_3_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_7">OPENBSD_3_7</option>
+<option value="1.1.1.1:OPENBSD_3_6_BASE">OPENBSD_3_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_6">OPENBSD_3_6</option>
+<option value="1.1.1.1:OPENBSD_3_5_BASE">OPENBSD_3_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_5">OPENBSD_3_5</option>
+<option value="1.1.1.1:OPENBSD_3_4_BASE">OPENBSD_3_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_4">OPENBSD_3_4</option>
+<option value="1.1.1.1:OPENBSD_3_3_BASE">OPENBSD_3_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_3">OPENBSD_3_3</option>
+<option value="1.1.1.1:OPENBSD_3_2_BASE">OPENBSD_3_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_2">OPENBSD_3_2</option>
+<option value="1.1.1.1:OPENBSD_3_1_BASE">OPENBSD_3_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_1">OPENBSD_3_1</option>
+<option value="1.1.1.1:OPENBSD_3_0_BASE">OPENBSD_3_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_3_0">OPENBSD_3_0</option>
+<option value="1.1.1.1:OPENBSD_2_9_BASE">OPENBSD_2_9_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_9">OPENBSD_2_9</option>
+<option value="1.1.1.1:OPENBSD_2_8_BASE">OPENBSD_2_8_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_8">OPENBSD_2_8</option>
+<option value="1.1.1.1:OPENBSD_2_7_BASE">OPENBSD_2_7_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_7">OPENBSD_2_7</option>
+<option value="1.1.1.1:OPENBSD_2_6_BASE">OPENBSD_2_6_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_6">OPENBSD_2_6</option>
+<option value="1.1.1.1:OPENBSD_2_5_BASE">OPENBSD_2_5_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_5">OPENBSD_2_5</option>
+<option value="1.1.1.1:OPENBSD_2_4_BASE">OPENBSD_2_4_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_4">OPENBSD_2_4</option>
+<option value="1.1.1.1:OPENBSD_2_3_BASE">OPENBSD_2_3_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_3">OPENBSD_2_3</option>
+<option value="1.1.1.1:OPENBSD_2_2_BASE">OPENBSD_2_2_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_2">OPENBSD_2_2</option>
+<option value="1.1.1.1:OPENBSD_2_1_BASE">OPENBSD_2_1_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_1">OPENBSD_2_1</option>
+<option value="1.1.1.1:OPENBSD_2_0_BASE">OPENBSD_2_0_BASE</option>
+<option value="1.1.1.1:OPENBSD_2_0">OPENBSD_2_0</option>
+<option value="1.1.1:MAIN">MAIN</option>
+<option value="1.1.1.1:HEAD">HEAD</option>
+</select>
+<input type="text" size="12" name="tr2" value="1.1.1.1" onchange="this.form.r2.selectedIndex=0"></td>
+<td><input type="submit" value="  Get Diffs  " accesskey="G"></td>
+</tr>
+</table>
+</form>
+<hr noshade>
+<form method="get" action="/cgi-bin/cvsweb/src/games/adventure/glorkz">
+<table style="border: none">
+<tr>
+<td align="right"><label for="f" accesskey="D">Preferred Diff type:</label></td>
+<td><select id="f" name="f" onchange="this.form.submit()">
+<option value="h">Colored</option>
+<option value="H">Long colored</option>
+<option value="u" selected>Unified</option>
+<option value="c">Context</option>
+</select></td>
+<td></td>
+</tr>
+<tr>
+<td align="right"><label for="only_with_tag" accesskey="B">View only Branch:</label></td>
+<td><a name="branch"></a>
+<select id="only_with_tag" name="only_with_tag" onchange="this.form.submit()">
+<option value="">Show all branches</option>
+<option>OPENBSD_6_7</option>
+<option>OPENBSD_6_6</option>
+<option>OPENBSD_6_5</option>
+<option>OPENBSD_6_4</option>
+<option>OPENBSD_6_3</option>
+<option>OPENBSD_6_2</option>
+<option>OPENBSD_6_1</option>
+<option>OPENBSD_6_0</option>
+<option>OPENBSD_5_9</option>
+<option>OPENBSD_5_8</option>
+<option>OPENBSD_5_7</option>
+<option>OPENBSD_5_6</option>
+<option>OPENBSD_5_5</option>
+<option>OPENBSD_5_4</option>
+<option>OPENBSD_5_3</option>
+<option>OPENBSD_5_2</option>
+<option>OPENBSD_5_1</option>
+<option>OPENBSD_5_0</option>
+<option>OPENBSD_4_9</option>
+<option>OPENBSD_4_8</option>
+<option>OPENBSD_4_7</option>
+<option>OPENBSD_4_6</option>
+<option>OPENBSD_4_5</option>
+<option>OPENBSD_4_4</option>
+<option>OPENBSD_4_3</option>
+<option>OPENBSD_4_2</option>
+<option>OPENBSD_4_1</option>
+<option>OPENBSD_4_0</option>
+<option>OPENBSD_3_9</option>
+<option>OPENBSD_3_8</option>
+<option>OPENBSD_3_7</option>
+<option>OPENBSD_3_6</option>
+<option>OPENBSD_3_5</option>
+<option>OPENBSD_3_4</option>
+<option>OPENBSD_3_3</option>
+<option>OPENBSD_3_2</option>
+<option>OPENBSD_3_1</option>
+<option>OPENBSD_3_0</option>
+<option>OPENBSD_2_9</option>
+<option>OPENBSD_2_8</option>
+<option>OPENBSD_2_7</option>
+<option>OPENBSD_2_6</option>
+<option>OPENBSD_2_5</option>
+<option>OPENBSD_2_4</option>
+<option>OPENBSD_2_3</option>
+<option>OPENBSD_2_2</option>
+<option>OPENBSD_2_1</option>
+<option>OPENBSD_2_0</option>
+<option>MAIN</option>
+</select></td>
+<td></td>
+</tr>
+<tr>
+<td align="right"><a name="logsort"></a>
+<label for="logsort" accesskey="L">Sort log by:</label></td>
+<td><select id="logsort" name="logsort" onchange="this.form.submit()">
+<option value="cvs">Not sorted</option>
+<option value="date" selected>Commit date</option>
+<option value="rev">Revision</option>
+</select></td>
+<td><input type="submit" value="  Set  " accesskey="S"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+72¥Û”      _D4€_D4‹Bù÷_D4‹   6    :https://cvsweb.openbsd.org/src/games/adventure/glorkz necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline';
+Content-Type: text/html
+Date: Mon, 24 Aug 2020 19:45:06 GMT
+Server: OpenBSD httpd
+ original-response-headers Connection: keep-alive
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline';
+Content-Type: text/html
+Date: Mon, 24 Aug 2020 19:45:06 GMT
+Server: OpenBSD httpd
+Transfer-Encoding: chunked
+ ctid 1 uncompressed-len 0 net-response-time-onstart 310 net-response-time-onstop 434   n∞

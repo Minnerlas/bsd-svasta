@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:db="http://docbook.org/ns/docbook">
+  <head>
+    <title>The FreeBSD Project</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen,print" href="./layout/css/fixed.css?20130112" type="text/css" />
+    <script type="text/javascript" src="./layout/js/google.js"></script>
+  </head>
+  <body>
+    <div id="containerwrap">
+      <div id="container">
+        <span class="txtoffscreen"><a href="#content" title="Skip site navigation" accesskey="1">Skip site navigation</a> (1)
+  <a href="#contentwrap" title="Skip section navigation" accesskey="2">Skip section navigation</a> (2)
+</span>
+        <div id="headercontainer">
+          <div id="header">
+            <h2 class="blockhide">Header And Logo</h2>
+            <div id="headerlogoleft">
+              <a href="." title="FreeBSD">
+                <img src="./layout/images/logo-red.png" width="457" height="75" alt="FreeBSD" />
+              </a>
+            </div>
+            <div id="headerlogoright">
+              <div class="frontdonateroundbox">
+                <div class="frontdonatetop">
+                  <div>
+                    <b style="display: none;">.</b>
+                  </div>
+                </div>
+                <div class="frontdonatecontent">
+                  <a href="https://www.FreeBSDFoundation.org/donate/">Donate to FreeBSD</a>
+                </div>
+                <div class="frontdonatebot">
+                  <div>
+                    <b style="display: none;">.</b>
+                  </div>
+                </div>
+              </div>
+              <h2 class="blockhide">Peripheral Links</h2>
+              <div id="searchnav">
+                <ul id="searchnavlist"></ul>
+              </div>
+              <div id="search">
+                <form method="get" id="search-form" action="https://duckduckgo.com/" onsubmit="document.getElementById('words').value+=' site: www.FreeBSD.org site: docs.FreeBSD.org site: lists.FreeBSD.org site: wiki.FreeBSD.org site: forums.FreeBSD.org'">
+                  <h2 class="blockhide">
+                    <label for="words">Search</label>
+                  </h2>
+                  <input type="hidden" name="ka" value="v" />
+                  <input type="hidden" name="kt" value="v" />
+                  <input type="hidden" name="kh" value="1" />
+                  <input type="hidden" name="kj" value="r2" />
+                  <input id="words" name="q" type="text" size="20" maxlength="255" onfocus="if( this.value==this.defaultValue ) this.value='';" value="Search" />
+                  <span> </span>
+                  <input id="submit" name="submit" type="submit" value="Search" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <h2 class="blockhide">Site Navigation</h2>
+          <div id="menu">
+            <ul class="first">
+              <li>
+                <a href="./">Home</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./about.html">About</a>
+                <ul>
+                  <li>
+                    <a href="./projects/newbies.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="./features.html">Features</a>
+                  </li>
+                  <li>
+                    <a href="./advocacy/">Advocacy</a>
+                  </li>
+                  <li>
+                    <a href="./marketing/">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="./privacy.html">Privacy Policy</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./where.html">Get FreeBSD</a>
+                <ul>
+                  <li>
+                    <a href="./releases/">Release Information</a>
+                  </li>
+                  <li>
+                    <a href="./releng/">Release Engineering</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./docs.html">Documentation</a>
+                <ul>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/faq/">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/handbook/">Handbook</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/porters-handbook">Porter's Handbook</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/developers-handbook">Developer's Handbook</a>
+                  </li>
+                  <li>
+                    <a href="//www.FreeBSD.org/cgi/man.cgi">Manual Pages</a>
+                  </li>
+                  <li>
+                    <a href="https://papers.FreeBSD.org">Presentations and Papers</a>
+                  </li>
+                  <li>
+                    <a href="./doc/en_US.ISO8859-1/books/fdp-primer">Documentation Project Primer</a>
+                  </li>
+                  <li>
+                    <a href="./docs/books.html">All Books and Articles</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./community.html">Community</a>
+                <ul>
+                  <li>
+                    <a href="./community/mailinglists.html">Mailing Lists</a>
+                  </li>
+                  <li>
+                    <a href="https://forums.FreeBSD.org">Forums</a>
+                  </li>
+                  <li>
+                    <a href="./usergroups.html">User Groups</a>
+                  </li>
+                  <li>
+                    <a href="./events/events.html">Events</a>
+                  </li>
+                  <li>
+                    <a href="http://freebsdjournal.com">FreeBSD Journal</a>
+                  </li>
+                  <li>
+                    <a href="http://serverfault.com/questions/tagged/freebsd">Q&amp;A (external)</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./projects/index.html">Developers</a>
+                <ul>
+                  <li>
+                    <a href="https://wiki.FreeBSD.org/IdeasPage">Project Ideas</a>
+                  </li>
+                  <li>
+                    <a href="https://svnweb.FreeBSD.org">Subversion Repository</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/freebsd">Git Mirror</a>
+                  </li>
+                  <li>
+                    <a href="https://reviews.FreeBSD.org">Code Review (Phabricator)</a>
+                  </li>
+                  <li>
+                    <a href="https://wiki.FreeBSD.org">Wiki</a>
+                  </li>
+                  <li>
+                    <a href="https://ci.FreeBSD.org">Continuous Integration Service</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./support.html">Support</a>
+                <ul>
+                  <li>
+                    <a href="./commercial/commercial.html">Vendors</a>
+                  </li>
+                  <li>
+                    <a href="./security/">Security Information</a>
+                  </li>
+                  <li>
+                    <a href="https://bugs.FreeBSD.org/search/">Bug Reports</a>
+                  </li>
+                  <li>
+                    <a href="https://www.FreeBSD.org/support.html">Submitting Bug Reports</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://www.freebsdfoundation.org/">Foundation</a>
+                <ul>
+                  <li>
+                    <a href="https://www.freebsdfoundation.org/donate/">Monetary Donations</a>
+                  </li>
+                  <li>
+                    <a href="./donations/index.html#systems">Hardware Donations</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="content">
+          <div id="frontcontainer">
+            <div id="frontmain">
+              <div id="frontfeaturecontainer">
+                <div id="frontfeatureleft">
+                  <div id="frontfeaturecontent">
+                    <h1>The FreeBSD Project</h1>
+                    <p>FreeBSD is an
+				  operating system used to power
+				  modern servers, desktops, and
+				  embedded
+				  <a href="./platforms/">platforms</a>.
+				  A large
+				  <a href="./doc/en_US.ISO8859-1/articles/contributors/staff-committers.html">community</a>
+				  has continually developed it for
+				  more than thirty years. Its advanced
+				  networking, security, and storage
+				  features have made FreeBSD the platform
+				  of choice for many of the
+				  <a href="./doc/en_US.ISO8859-1/books/handbook/nutshell.html#introduction-nutshell-users">busiest web sites</a>
+				  and most pervasive
+				  embedded networking and storage
+				  devices.</p>
+                    <div id="txtfrontfeaturelink"> »<a href="./about.html" title="Learn More">Learn More</a></div>
+                    <div id="txtfrontjournalblock"><br />»
+				    <span id="txtfrontjournallink">
+				      Get the <a href="https://freebsdfoundation.org/our-work/journal/" title="FreeBSD Journal">FreeBSD Journal</a></span></div>
+                  </div>
+                </div>
+                <div id="frontfeaturemiddle">
+                  <div class="frontgetroundbox">
+                    <div class="frontgettop">
+                      <div>
+                        <b style="display: none">.</b>
+                      </div>
+                    </div>
+                    <div class="frontgetcontent">
+                      <a href="./where.html">Download FreeBSD</a>
+                    </div>
+                    <div class="frontgetbot">
+                      <div>
+                        <b style="display: none">.</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="frontreleases">
+                    <div id="frontreleasescontent" class="txtshortcuts">
+                      <h2>
+                        <a href="./releases/">Supported Releases</a>
+                      </h2>
+                      <ul id="frontreleaseslist">
+                        <li>Production: <a href="./releases/12.1R/announce.html">12.1</a>,
+				<a href="./releases/11.4R/announce.html">11.4</a>,
+				<a href="./releases/11.3R/announce.html">11.3</a></li>
+                        <li>Upcoming: <a href="./releases/12.2R/schedule.html">12.2</a></li>
+                        <li>Upcoming: <a href="./releases/13.0R/schedule.html">13.0</a></li>
+                        <li>
+                          <a href="./security/security.html#sup">Support Lifecycle</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="frontfeatureright">
+                  <h2 class="blockhide">Language Links</h2>
+                  <div id="languagenav">
+                    <ul id="languagenavlist">
+                      <li>
+                        <a href="./de/" title="German">de</a>
+                      </li>
+                      <li>
+                        <a href="./" title="English">en</a>
+                      </li>
+                      <li>
+                        <a href="./ja/" title="Japanese">ja</a>
+                      </li>
+                      <li>
+                        <a href="./zh_CN/" title="Chinese (Simplified)">zh_CN</a>
+                      </li>
+                      <li class="last-child">
+                        <a href="./zh_TW/" title="Chinese (Traditional)">zh_TW</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="frontshortcuts">
+                    <div id="frontshortcutscontent" class="txtshortcuts">
+                      <h2>SHORTCUTS</h2>
+                      <ul id="frontshortcutslist">
+                        <li>
+                          <a href="./community/mailinglists.html" title="Mailing Lists">Mailing Lists</a>
+                        </li>
+                        <li>
+                          <a href="./support/bugreports.html" title="Reporting Problems">Reporting Problems</a>
+                        </li>
+                        <li>
+                          <a href="./doc/en_US.ISO8859-1/books/faq/index.html" title="FAQ">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="./doc/en_US.ISO8859-1/books/handbook/index.html" title="Handbook">Handbook</a>
+                        </li>
+                        <li>
+                          <a href="./ports/index.html" title="Ports">Ports</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="frontnewroundbox">
+                    <div class="frontnewtop">
+                      <div>
+                        <b style="display: none">.</b>
+                      </div>
+                    </div>
+                    <div class="frontnewcontent">
+                      <a href="./projects/newbies.html">New to FreeBSD?</a>
+                    </div>
+                    <div class="frontnewbot">
+                      <div>
+                        <b style="display: none">.</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frontfeaturecontent">
+                    <img src="./layout/images/25thanniversary.png" style="margin-top: 5px;" width="167" height="88" alt="25th Anniversary Logo" />
+                  </div>
+                </div>
+              </div>
+              <br class="clearboth" />
+              <div id="frontnemscontainer">
+                <div id="frontnews">
+                  <div id="frontnewscontent" class="txtnewsevent">
+                    <h2>LATEST NEWS</h2>
+                    <div class="newseventswrap">
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-26</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200726:01">New committer:
+            Daniel Ebdrup Jensen
+	    (doc)<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-23</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200723:01">New committer:
+           Robert Wing
+           (src)<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-15</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200715:01">April-June 2020 Status Report<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-01</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200701:01">New FreeBSD Core Team Elected<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-06-16</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200616:01">FreeBSD 11.4-RELEASE Available<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-06-09</span>
+                        <br />
+                        <a href="./news/newsflash.html#event20200609:01">FreeBSD has revised its code of conduct to a new
+                LLVM-derived code of conduct.<br /></a>
+                      </p>
+                      <div>
+                        <ul class="newseventslist">
+                          <li class="first-child">
+                            <a href="./news/newsflash.html" title="More News">More News</a>
+                          </li>
+                          <li class="last-child">
+                            <a href="./news/rss.xml" title="News RSS Feed">
+                              <img class="rssimage" src="./layout/images/ico_rss.png" width="27" height="12" alt="News RSS Feed" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frontseparator">
+                  <b style="display: none">.</b>
+                </div>
+                <div id="frontevents">
+                  <div id="fronteventscontent" class="txtnewsevent">
+                    <h2>UPCOMING EVENTS</h2>
+                    <div class="newseventswrap">
+                      <p xmlns="">
+                        <span class="txtdate">2020-08-28 -  2020-08-28</span>
+                        <br />
+                        <a href="./events/#event:14">FreeBSD Friday: Intro to FreeBSD Security<br /></a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-09-19 -  2020-09-19</span>
+                        <br />
+                        <a href="./events/#event:15">FreeBSD Bug Squash<br />
+	  (Online, Canada)
+	</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-09-25 -  2020-09-25</span>
+                        <br />
+                        <a href="./events/#event:16">FreeBSD Friday: Intro to Jails<br /></a>
+                      </p>
+                      <div>
+                        <ul class="newseventslist">
+                          <li class="only-child">
+                            <a href="./events/" title="More Events">More Events</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frontseparator">
+                  <b style="display: none">.</b>
+                </div>
+                <div id="frontmedia">
+                  <div id="frontmediacontent" class="txtnewsevent">
+                    <h2>PRESS</h2>
+                    <div class="newseventswrap">
+                      <p xmlns="">
+                        <span class="txtdate">2020-02</span>
+                        <br />
+                        <a href="./news/press.html#story202002:01">Discussing Past, Present and Future of FreeBSD Project</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-02</span>
+                        <br />
+                        <a href="./news/press.html#story202002:02">Supporting an open source operating system: a Q&amp;A
+	  with the FreeBSD Foundation</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2019-08</span>
+                        <br />
+                        <a href="./news/press.html#story201908:01">Meet FreeBSD Project &#8211; A Journey of 26 Years and
+	  Beyond</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2019-06</span>
+                        <br />
+                        <a href="./news/press.html#story201906:01">FreeBSD Turns 26</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2019-06</span>
+                        <br />
+                        <a href="./news/press.html#story201906:02">8 Popular Products You Didn't Know Were Built with Open
+	  Source</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2019-06</span>
+                        <br />
+                        <a href="./news/press.html#story201906:03">FreeBSD Foundation Announces FreeBSD Day on June 19,
+	  2019</a>
+                      </p>
+                      <div>
+                        <ul class="newseventslist">
+                          <li class="only-child">
+                            <a href="./news/press.html" title="More Media">More Media</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frontseparator">
+                  <b style="display: none">.</b>
+                </div>
+                <div id="frontsecurity">
+                  <div id="frontsecuritycontent" class="txtnewsevent">
+                    <h2>SECURITY ADVISORIES</h2>
+                    <div class="newseventswrap">
+                      <p xmlns="">
+                        <span class="txtdate">2020-08-05</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-SA-20:23.sendmsg.asc">FreeBSD-SA-20:23.sendmsg</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-08-05</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-SA-20:22.sqlite.asc">FreeBSD-SA-20:22.sqlite</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-08-05</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-SA-20:21.usb_net.asc">FreeBSD-SA-20:21.usb_net</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-08</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-SA-20:20.ipv6.asc">FreeBSD-SA-20:20.ipv6</a>
+                      </p>
+                      <div>
+                        <ul class="newseventslist">
+                          <li class="first-child">
+                            <a href="./security/advisories.html" title="More Security Advisories">More</a>
+                          </li>
+                          <li class="last-child">
+                            <a href="./security/rss.xml" title="Security Advisories RSS Feed">
+                              <img class="rssimage" src="./layout/images/ico_rss.png" width="27" height="12" alt="Security Advisories RSS Feed" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <br />
+                    <h2>ERRATA NOTICES</h2>
+                    <div class="newseventswrap">
+                      <p xmlns="">
+                        <span class="txtdate">2020-08-05</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-EN-20:16.vmx.asc">FreeBSD-EN-20:16.vmx</a>
+                      </p>
+                      <p xmlns="">
+                        <span class="txtdate">2020-07-08</span>
+                        <br />
+                        <a href="//security.FreeBSD.org/advisories/FreeBSD-EN-20:15.mps.asc">FreeBSD-EN-20:15.mps</a>
+                      </p>
+                      <div>
+                        <ul class="newseventslist">
+                          <li class="first-child">
+                            <a href="./security/notices.html" title="More Errata Notices">More</a>
+                          </li>
+                          <li class="last-child">
+                            <a href="./security/errata.xml" title="Errata Notices RSS Feed">
+                              <img class="rssimage" src="./layout/images/ico_rss.png" width="27" height="12" alt="Errata Notices RSS Feed" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br class="clearboth" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer"><span><a href="./search/index-site.html">Site Map</a> |
+  <a href="./copyright/">Legal Notices</a> | © 1995&#8211;2020 The FreeBSD Project.
+  All rights reserved.</span>
+
+	The mark FreeBSD is a registered trademark of The FreeBSD
+	Foundation and is used by The FreeBSD Project with the
+	permission of <a href="https://www.freebsdfoundation.org/legal/trademark-usage-terms-and-conditions/">The
+	FreeBSD Foundation</a>.
+	<a href="./mailto.html" title="Contact">Contact</a></div>
+      </div>
+    </div>
+  </body>
+</html>
+vÍ>ç      _E!_E"B	5Ó_E!       :https://www.freebsd.org/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 25 Aug 2020 11:20:41 GMT
+Content-Type: text/html
+Content-Length: 25265
+Last-Modified: Tue, 25 Aug 2020 11:15:18 GMT
+ETag: "5f44f2c6-62b1"
+Server: ToTheCloud/v0.01
+X-Varnish: 736783064 736903625
+Age: 27
+Via: 1.1 wfe0.nyi.FreeBSD.org
+X-Cache: HIT
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/; style-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ 'unsafe-inline'; script-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ https://ssl.google-analytics.com/ga.js 'unsafe-inline' resource: data: blob:; img-src 'self' https://www.freebsd.org/ https://docs.freebsd.org https://ssl.google-analytics.com/ https://chart.googleapis.com/ data: blob:; upgrade-insecure-requests
+ original-response-headers Date: Tue, 25 Aug 2020 11:20:41 GMT
+Content-Type: text/html
+Content-Length: 25265
+Connection: keep-alive
+Last-Modified: Tue, 25 Aug 2020 11:15:18 GMT
+ETag: "5f44f2c6-62b1"
+Server: ToTheCloud/v0.01
+X-Varnish: 736783064 736903625
+Age: 27
+Via: 1.1 wfe0.nyi.FreeBSD.org
+X-Cache: HIT
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/; style-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ 'unsafe-inline'; script-src 'self' https://www.freebsd.org/ https://docs.freebsd.org/ https://ssl.google-analytics.com/ga.js 'unsafe-inline' resource: data: blob:; img-src 'self' https://www.freebsd.org/ https://docs.freebsd.org https://ssl.google-analytics.com/ https://chart.googleapis.com/ data: blob:; upgrade-insecure-requests
+ ctid 1 uncompressed-len 0 predictor::resource-count 15 predictor::https://www.freebsd.org/layout/css/fixed.css?20130112 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/js/google.js 1,1,1598361633,4097 predictor::https://www.freebsd.org/layout/images/logo-red.png 1,1,1598361633,4097 predictor::https://www.freebsd.org/layout/images/25thanniversary.png 1,1,1598361633,4097 net-response-time-onstart 458 net-response-time-onstop 571 predictor::https://www.freebsd.org/layout/images/ico_rss.png 1,1,1598361633,4097 predictor::https://www.freebsd.org/layout/css/global.css 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/css/layout.css?20150916 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/css/text.css 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/css/navigation.css 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/css/table.css 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/css/iefixes.css 1,1,1598361633,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/images/hdr_fill.png 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/images/beastie.png 1,1,1598361633,4096 predictor::https://www.freebsd.org/layout/images/blt_red_arrow.png 1,1,1598361633,4096   b±
