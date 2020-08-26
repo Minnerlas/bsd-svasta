@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ datetime,   " %s | "		,    "%e.%m.%Y. %R"	},
 	{ cpu_perc,   "%3s%% | "	,    NULL			},
-	{ disk_free,  "%s | "		,    "/"			},
+	{ disk_free,  "%s | "		,    "/home/"			},
 	{ keymap,     "%9s | "		,    NULL			},
 	{ netspeed_rx," %8s "		,    "em0"	},
 };
